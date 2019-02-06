@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <style>
+        html {
+            box-sizing: border-box;
+        }
+
+        *,
+        *:after,
+        *:before {
+            box-sizing: inherit;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font: normal 18px 'Oxygen';
+            background: #ececec;
+        }
+
+        header {
+            height: 60px;
+            background: #2c89e0;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            padding: 0 40px;
+            box-shadow: 1px 2px 6px 0px #777;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        .banner {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        main {
+            display: flex;
+            justify-content: center;
+            height: calc(100vh - 100px);
+            padding: 20px 40px;
+            overflow-y: auto;
+        }
+
+        input {
+            width: 200px;
+            height: 30px;
+            border-radius: 5px;
+        }
+
+        button {
+            background: #2c89e0;
+            border: none;
+            box-shadow: 1px 1px 3px 0px #777;
+            color: #fff;
+            padding: 8px;
+        }
+
+        .button {
+            display: flex;
+            justify-content: center;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        li {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            background: #fff;
+            box-shadow: 1px 1px 3px 0px #777;
+        }
+
+        .todo-item-name {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        li:hover {
+            box-shadow: 1px 0px 1px 0px #777;
+        }
+
+        button:hover {
+            box-shadow: none;
+        }
+
+        footer {
+            height: 40px;
+            background: #2d3850;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            padding: 0 40px;
+        }
+    </style>
+    <title>Vanilla Todos PWA</title>
+</head>
+
+<body>
+
+    <body>
+        <header>
+            <h3><a class="banner" href="#/"> Vanilla Todos </a></h3>
+        </header>
+        <main id="app"></main>
+        <footer>
+            <span>&copy; 2019 Anurag Majumdar - Vanilla Todos SPA</span>
+        </footer>
+        <script async src="<%= htmlWebpackPlugin.files.chunks.main.entry %>"></script>
+
+        <noscript>
+            This site uses JavaScript. Please enable JavaScript in your browser.
+        </noscript>
+    </body>
+</body>
+
+</html>

@@ -1,0 +1,42 @@
+{
+  "name": "vanilla-todos-pwa",
+  "version": "1.0.0",
+  "description": "A simple todo application using ES6 and Webpack",
+  "main": "src/main.js",
+  "scripts": {
+    "build": "webpack --mode production && node build-sw",
+    "dev": "webpack --mode development",
+    "serve": "webpack-dev-server --mode=development --hot",
+    "watch": "webpack --mode development -w && reload -b -d dist -p 1000"
+  },
+  "keywords": [],
+  "author": "Anurag Majumdar",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.2.2",
+    "@babel/plugin-syntax-dynamic-import": "^7.2.0",
+    "@babel/preset-env": "^7.2.3",
+    "autoprefixer": "^9.4.5",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.0.4",
+    "babel-preset-env": "^1.7.0",
+    "clean-webpack-plugin": "^1.0.0",
+    "compression-webpack-plugin": "^2.0.0",
+    "copy-webpack-plugin": "^4.6.0",
+    "css-loader": "^2.1.0",
+    "html-webpack-plugin": "^3.2.0",
+    "mini-css-extract-plugin": "^0.5.0",
+    "node-sass": "^4.11.0",
+    "reload": "^2.4.0",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.1",
+    "terser": "^3.14.1",
+    "webpack": "^4.28.4",
+    "webpack-cli": "^3.2.1",
+    "webpack-dev-server": "^3.1.14"
+  },
+  "dependencies": {
+    "webpack-md5-hash": "0.0.6",
+    "webpack-node-externals": "^1.7.2"
+  }
+}
