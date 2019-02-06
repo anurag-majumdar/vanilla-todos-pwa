@@ -19,13 +19,13 @@
         body {
             margin: 0;
             padding: 0;
-            font: normal 18px 'Oxygen';
+            font: 18px 'Oxygen', Helvetica;
             background: #ececec;
         }
 
         header {
             height: 60px;
-            background: #2c89e0;
+            background: #512DA8;
             color: #fff;
             display: flex;
             align-items: center;
@@ -40,12 +40,13 @@
         .banner {
             text-decoration: none;
             color: #fff;
+            cursor: pointer;
         }
 
         main {
             display: flex;
             justify-content: center;
-            height: calc(100vh - 100px);
+            height: calc(100vh - 140px);
             padding: 20px 40px;
             overflow-y: auto;
         }
@@ -57,11 +58,13 @@
         }
 
         button {
-            background: #2c89e0;
-            border: none;
+            background: #512DA8;
+            border: 2px solid #512DA8;
+            cursor: pointer;
             box-shadow: 1px 1px 3px 0px #777;
             color: #fff;
-            padding: 8px;
+            padding: 10px 15px;
+            border-radius: 20px;
         }
 
         .button {
@@ -80,6 +83,10 @@
             padding: 20px;
             background: #fff;
             box-shadow: 1px 1px 3px 0px #777;
+        }
+
+        .todo-item {
+            margin: 20px 0;
         }
 
         .todo-item-name {
@@ -102,7 +109,7 @@
             color: #fff;
             display: flex;
             align-items: center;
-            padding: 0 40px;
+            padding: 40px;
         }
     </style>
     <title>Vanilla Todos PWA</title>
@@ -112,7 +119,7 @@
 
     <body>
         <header>
-            <h3><a class="banner" href="#/"> Vanilla Todos </a></h3>
+            <h3><a class="banner"> Vanilla Todos PWA </a></h3>
         </header>
         <main id="app"></main>
         <footer>

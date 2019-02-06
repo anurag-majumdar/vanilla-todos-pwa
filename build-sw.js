@@ -2,8 +2,8 @@ const glob = require('glob');
 const fs = require('fs');
 
 const dest = 'dist/sw.js';
-const staticAssetsCacheName = 'todo-assets-v1';
-const dynamicCacheName = 'todo-dynamic-v1';
+const staticAssetsCacheName = 'todo-assets-v3';
+const dynamicCacheName = 'todo-dynamic-v3';
 
 let staticAssetsCacheFiles = glob
     .sync('dist/**/*')

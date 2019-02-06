@@ -1,3 +1,3 @@
 export const AppModel = {
-    title: 'App Component'
+    title: 'Main Application'
 };

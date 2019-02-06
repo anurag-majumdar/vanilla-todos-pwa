@@ -1,7 +1,9 @@
 import {
     appTemplate
 } from './app.template';
-import { AppModel } from './app.model';
+import {
+    AppModel
+} from './app.model';
 
 export const AppComponent = {
 
@@ -20,7 +22,11 @@ export const AppComponent = {
                     })
                     .catch(error => 'An error occurred while loading Module');
             }
-            // window.location.href = window.location.origin + '/#/todo';
+        });
+
+        document.querySelector('.banner').addEventListener('click', event => {
+            event.preventDefault();
+            this.render();
         });
     },
 
