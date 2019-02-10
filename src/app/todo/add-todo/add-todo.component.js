@@ -12,6 +12,13 @@ import {
 } from './add-todo.model';
 
 export const AddTodoComponent = {
+    validateTextInput() {
+        if (AddTodoModel.name === '' || AddTodoModel.name == null) {
+            return false;
+        }
+        return true;
+    },
+
     render() {
         return addTodoTemplate();
     },
@@ -25,7 +32,7 @@ export const AddTodoComponent = {
         });
 
         txtTodo.addEventListener('keyup', event => {
-            if (event.key === 'Enter') {
+            if (event.key === 'Enter' && this.validateTextInput()) {
                 const todo = {
                     id: Date.now(),
                     name: AddTodoModel.name
@@ -42,6 +49,9 @@ export const AddTodoComponent = {
         });
 
         btnAddTodo.addEventListener('click', event => {
+            if (!this.validateTextInput()) {
+                return;
+            }
             const todo = {
                 id: Date.now(),
                 name: AddTodoModel.name

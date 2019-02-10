@@ -2,8 +2,8 @@ const glob = require('glob');
 const fs = require('fs');
 
 const dest = 'dist/sw.js';
-const staticAssetsCacheName = 'todo-assets-v3';
-const dynamicCacheName = 'todo-dynamic-v3';
+const staticAssetsCacheName = 'todo-assets-v4';
+const dynamicCacheName = 'todo-dynamic-v4';
 
 let staticAssetsCacheFiles = glob
     .sync('dist/**/*')
@@ -14,7 +14,6 @@ let staticAssetsCacheFiles = glob
         if (/\.gz$/.test(file)) return false;
         if (/sw\.js$/.test(file)) return false;
         if (!/\.+/.test(file)) return false;
-        // if (file.match(new RegExp('assets'))) return true;
         return true;
     });
 
@@ -22,7 +21,7 @@ staticAssetsCacheFiles = [...staticAssetsCacheFiles];
 
 const stringFileCachesArray = JSON.stringify(staticAssetsCacheFiles);
 
-const installEventScript = `var staticAssetsCacheName = '${staticAssetsCacheName}';
+const serviceWorkerScript = `var staticAssetsCacheName = '${staticAssetsCacheName}';
 var dynamicCacheName = '${dynamicCacheName}';
 
 self.addEventListener('install', function (event) {
@@ -87,7 +86,7 @@ self.addEventListener('install', function (event) {
   }
 `;
 
-fs.writeFile(dest, installEventScript, function(error) {
+fs.writeFile(dest, serviceWorkerScript, function(error) {
     if (error) return;
     console.log('Service Worker Write success');
 });

@@ -1,5 +1,3 @@
-import {
-    App
-} from './app/app.module';
+import { App } from './app/app.module';
 
 App.init();

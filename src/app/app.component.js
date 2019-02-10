@@ -1,9 +1,5 @@
-import {
-    appTemplate
-} from './app.template';
-import {
-    AppModel
-} from './app.model';
+import { appTemplate } from './app.template';
+import { AppModel } from './app.model';
 
 export const AppComponent = {
 
