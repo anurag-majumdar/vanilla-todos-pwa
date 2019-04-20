@@ -1,6 +1,5 @@
-import {
-    AppComponent
-} from './app.component';
+import AppComponent from './app.component';
+import ToastComponent from "./common/toast.component";
 
 export const App = {
     init() {
@@ -9,6 +8,7 @@ export const App = {
     },
 
     initComponents() {
+        ToastComponent.init();
         AppComponent.init();
     },
 

@@ -5,10 +5,12 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Vanilla Todos</title>
+    <title>Tenor.io Portfolio</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <style>
         html {
             box-sizing: border-box;
+            font: 16px 'Oxygen', Helvetica;
         }
 
         *,
@@ -17,14 +19,136 @@
             box-sizing: inherit;
         }
 
+        /*start tipography*/
+        body, caption, th, td, input, textarea, select, option, legend, fieldset, h1, h2, h3, h4, h5, h6 {
+            font-size-adjust: 0.5;
+        }
+
+        #page {
+            font-size: 1em;
+            /* equivalent to 16px */
+            line-height: 1.25;
+            /* equivalent to 20px */
+        }
+
+        @media (min-width: 43.75em) {
+            #page {
+                font-size: 1em;
+                /* equivalent to 16px */
+                line-height: 1.375;
+                /* equivalent to 22px */
+            }
+        }
+
+        h1 {
+            font-size: 2em;
+            /* 2x body copy size = 32px */
+            line-height: 1.25;
+            /* 45px / 36px */
+        }
+
+        @media (min-width: 43.75em) {
+            h1 {
+                font-size: 2.5em;
+                /* 2.5x body copy size = 40px */
+                line-height: 1.125;
+            }
+        }
+
+        @media (min-width: 56.25em) {
+            h1 {
+                font-size: 3em;
+                /* 3x body copy size = 48px */
+                line-height: 1.05;
+                /* keep to a multiple of the 20px line height and something more appropriate for display headings */
+            }
+        }
+
+        h2 {
+            font-size: 1.625em;
+            /* 1.625x body copy size = 26px */
+            line-height: 1.15384615;
+            /* 30px / 26px */
+        }
+
+        @media (min-width: 43.75em) {
+            h2 {
+                font-size: 2em;
+                /* 2x body copy size = 32px */
+                line-height: 1.25;
+            }
+        }
+
+        @media (min-width: 56.25em) {
+            h2 {
+                font-size: 2.25em;
+                /* 2.25x body copy size = 36px */
+                line-height: 1.25;
+            }
+        }
+
+        h3 {
+            font-size: 1.375em;
+            /* 1.375x body copy size = 22px */
+            line-height: 1.13636364;
+            /* 25px / 22px */
+        }
+
+        @media (min-width: 43.75em) {
+            h3 {
+                font-size: 1.5em;
+                /* 1.5x body copy size = 24px */
+                line-height: 1.25;
+            }
+        }
+
+        @media (min-width: 56.25em) {
+            h3 {
+                font-size: 1.75em;
+                /* 1.75x body copy size = 28px */
+                line-height: 1.25;
+            }
+        }
+
+        h4 {
+            font-size: 1.125em;
+            /* 1.125x body copy size = 18px */
+            line-height: 1.11111111;
+        }
+
+        @media (min-width: 43.75em) {
+            h4 {
+                line-height: 1.22222222;
+                /* (22px / 18px */
+            }
+        }
+
+        blockquote {
+            font-size: 1.25em;
+            /* 20px / 16px */
+            line-height: 1.25;
+            /* 25px / 20px */
+        }
+
+        @media (min-width: 43.75em) {
+            blockquote {
+                font-size: 1.5em;
+                /* 24px / 16px = */
+                line-height: 1.45833333;
+                /* 35px / 24px */
+            }
+        }
+        /*end tipography*/
+
         body {
             margin: 0;
             padding: 0;
-            font: 14px 'Oxygen', Helvetica;
             background: #ececec;
+            font-size: 100%;
         }
 
         header {
+            position: relative;
             height: 60px;
             background: #512da8;
             color: #fff;
@@ -32,6 +156,45 @@
             align-items: center;
             padding: 0 40px;
             box-shadow: 1px 2px 6px 0px #777;
+        }
+
+        .header__menu-btn {
+            margin-left: auto;
+            font-size: 36px;
+        }
+
+        .navbar {
+            position: absolute;
+            bottom: -60px;
+            left: 0;
+            width: 100%;
+            height: 60px;
+            background: purple;
+            align-items: center;
+            display: flex;
+            padding: 0 40px;
+        }
+
+        .navbar ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            flex: 1;
+            justify-content: space-between;
+        }
+
+        .navbar li {
+            display: inline;
+        }
+
+        .navbar li i {
+            transition: all 0.15s ease-in;
+        }
+
+        .selected {
+            color: #03a9f4;
+            fill: #03a9f4;
+            transform: scale(1.5);
         }
 
         h1 {
@@ -45,20 +208,11 @@
         }
 
         main {
-            display: flex;
-            justify-content: center;
             height: calc(100vh - 140px);
-            padding: 20px 40px;
             overflow-y: auto;
+            position: relative;
         }
 
-        input {
-            width: 200px;
-            height: 40px;
-            /* border-radius: 20px; */
-            border: none;
-            padding-left: 20px;
-        }
 
         button {
             background: #512da8;
@@ -68,7 +222,6 @@
             color: #fff;
             padding: 10px 15px;
             /* border-radius: 20px; */
-            margin-top: 20px;
         }
 
         .button {
@@ -76,56 +229,11 @@
             justify-content: center;
         }
 
-        @media screen and (min-width: 451px) {
-            body {
-                font-size: 18px;
-            }
-
-            input {
-                width: 280px;
-            }
-
-            button {
-                margin-top: 0;
-            }
-        }
-
-        ul {
-            list-style: none;
-            padding: 0;
-        }
-
-        li {
-            display: flex;
-            justify-content: space-between;
-            padding: 20px;
-            background: #fff;
-            box-shadow: 1px 1px 3px 0px #777;
-        }
-
-        .todo-item {
-            margin: 20px 0;
-        }
-
-        .add-todo-section {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-
-        .todo-item-name {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        li:hover {
-            box-shadow: 1px 0px 1px 0px #777;
-        }
 
         button:hover {
             box-shadow: none;
         }
+
 
         footer {
             height: 40px;
@@ -135,6 +243,73 @@
             align-items: center;
             padding: 40px;
         }
+
+        .page__text-zone {
+            margin-top: 60px;
+            z-index: 1;
+            position: relative;
+        }
+
+        .page {
+            position: absolute;
+            z-index: 1;
+            height: 100%;
+            width: 100%;
+            overflow: auto;
+            padding: 60px 40px 20px;
+            transform: translateX(100%);
+            transition: transform 0.3s ease-out;
+        }
+
+        .page.slide {
+            transform: translateX(0%);
+
+        }
+
+        .page__background {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            text-align: center;
+            z-index: 0;
+        }
+
+        .temp-bg {
+            font-size: 400px;
+            color: purple;
+        }
+
+        /*home*/
+        #home.page h1 {
+            font-size: 2em;
+            line-height: 1;
+        }
+        #home.page h2 {
+            font-size: 0.8em;
+            line-height: 1.15384615;
+            font-weight: normal;
+        }
+
+        .toast {
+            position: fixed;
+            height: 80px;
+            width: 100%;
+            max-width: 375px;
+            background: #3e3939;
+            color: #e6e4e4;
+            padding: 10px 40px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            transform: translateY(100%);
+            transition: transform 0.3s ease-out;
+        }
+
+        .toast.show-toast {
+            transform: translateY(0%);
+        }
     </style>
 </head>
 
@@ -142,11 +317,60 @@
 
     <body>
         <header>
-            <h3><a class="banner"> Vanilla Todos PWA </a></h3>
+            <h3><a class="banner">Tenor.io</a></h3>
+            <i data-target="menu" class="header__menu-btn fas fa-bars"></i>
+            <nav class="navbar">
+                <ul class="navbar__list">
+                    <li class="navbar__list-item">
+                        <i data-target="home" class="nav-icon fas fa-home"></i>
+                    </li>
+                    <li class="navbar__list-item">
+                        <i data-target="about" class="nav-icon far fa-user"></i>
+                    </li>
+                    <li class="navbar__list-item">
+                        <i data-target="skills" class="nav-icon fas fa-code"></i>
+                    </li>
+                    <li class="navbar__list-item">
+                        <i data-target="work" class="nav-icon fas fa-briefcase"></i>
+                    </li>
+                    <li class="navbar__list-item">
+                        <i data-target="gallery" class="nav-icon far fa-images"></i>
+                    </li>
+                </ul>
+            </nav>
         </header>
-        <main id="app"></main>
+        <main>
+            <section id="home" class="page">
+                <section class="page__text-zone">
+                    <h1>
+                        <span>Hi,</span>
+                        <br/>
+                        <span>I'm Tenorio,</span>
+                        <br/>
+                        <span>Web Developer.</span>
+                    </h1>
+                    <h2>Front End Developer / React Developer / Angular JS </h2>
+                    <button>
+                        contact me
+                    </button>
+                </section>
+                <section class="page__background">
+                    <span class="temp-bg">
+                        T
+                    </span>
+                </section>
+            </section>
+            <section id="about" class="page"></section>
+            <section id="skills" class="page"></section>
+            <section id="work" class="page"></section>
+            <section id="gallery" class="page"></section>
+
+        </main>
+        <span class="toast">
+            Toast
+        </span>
         <footer>
-            <span>&copy; 2019 Anurag Majumdar - Vanilla Todos PWA</span>
+            <span>&copy; 2019 Tenorio Oliveira - Portfolio PWA</span>
         </footer>
         <script async src="<%= htmlWebpackPlugin.files.chunks.main.entry %>"></script>
 

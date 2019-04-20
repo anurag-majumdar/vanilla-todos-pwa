@@ -1,32 +1,61 @@
-import { appTemplate } from './app.template';
-import { AppModel } from './app.model';
+import ToastComponent from './common/toast.component'
 
-export const AppComponent = {
+const AppComponent = {
 
     init() {
-        this.appElement = document.querySelector('#app');
+        this.currentMenuItem = null;
+        this.currentPage = null;
+        this.body = document.querySelector('body');
+        this.menuButton = document.querySelector('.header__menu-btn');
+        this.navbarMenuList = document.querySelector('.navbar__list');
+        this.menuItems = [].slice.call(document.querySelectorAll('.navbar__list-item'));
+        this.pageItems = [].slice.call(document.querySelectorAll('.page'));
+        this.pageItemsMapByName = this.pageItems.reduce(
+            (map, pageItem) => {
+                map[pageItem.id] = pageItem;
+                return map;
+            }, {});
+        this.loadDefaultView();
         this.initEvents();
-        this.render();
     },
 
     initEvents() {
-        this.appElement.addEventListener('click', event => {
-            if (event.target.className === 'btn-todo') {
-                import( /* webpackChunkName: "todo" */ './todo/todo.module')
-                    .then(lazyModule => {
-                        lazyModule.TodoModule.init();
-                    })
-                    .catch(error => 'An error occurred while loading Module');
-            }
-        });
 
-        document.querySelector('.banner').addEventListener('click', event => {
-            event.preventDefault();
-            this.render();
-        });
+    },
+
+    loadDefaultView () {
+        this.currentMenuItem = this.menuItems[0];
+        this.currentPage = this.pageItems[0];
+        this.setUpView();
+    },
+
+    setUpView () {
+        if (this.currentMenuItem.tagName === "LI") {
+            this.currentMenuItem.firstElementChild.classList.add('selected');
+        } else {
+            this.currentMenuItem.classList.add('selected');
+        }
+        this.currentPage.classList.add('slide');
+        ToastComponent.showToast(`${this.currentPage.id} Page.`);
+        switch (this.currentPage.id) {
+            case 'skills': loadModule(this.currentPage.id);
+        }
+
+    },
+
+    loadModule (name) {
+        import( /* webpackChunkName: "todo" */ `./${name}/${name}.module`)
+            .then(lazyModule => {
+                lazyModule.init();
+            })
+            .catch(error => {
+                ToastComponent.showToast("Network error. Please try again.")
+            });
     },
 
     render() {
-        this.appElement.innerHTML = appTemplate(AppModel);
+        // this.appElement.innerHTML = appTemplate(AppModel);
     }
 };
+
+export default AppComponent;

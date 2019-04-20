@@ -1,3 +1,4 @@
 export const AppModel = {
-    title: 'Main Application'
+    title: 'Main Application',
+    pages: []
 };
