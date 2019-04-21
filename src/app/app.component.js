@@ -1,6 +1,7 @@
 import ToastComponent from './common/toast.component'
 import { TimelineMax } from 'gsap';
 import DrawSVGplugin from './../assets/js/DrawSVGPlugin';
+import preloaderComponent from "./common/preloader";
 
 const AppComponent = {
 
@@ -20,6 +21,8 @@ const AppComponent = {
                 map[pageItem.id] = pageItem;
                 return map;
             }, {});
+        this.preloader = preloaderComponent;
+        this.preloader.init();
         this.setupAnimations();
         this.loadDefaultView();
         this.initEvents();
@@ -78,6 +81,10 @@ const AppComponent = {
                     tl3.restart(true);
                 };
             })(),
+
+            fadeoutPage: () => {
+
+            },
         }
     },
 
@@ -122,18 +129,21 @@ const AppComponent = {
         } else {
             this.currentMenuItem.classList.add('selected');
         }
-        this.currentPage.classList.add('slide');
+
+        // this.currentPage.classList.add('slide');
 
         if(this.currentPage.id !== 'home'){
             this.loadModule(this.currentPage.id);
         } else {
+            this.preloader.fadeInPage(this.currentPage);
             this.animations.animateLogo();
         }
     },
 
     clearView () {
         if( this.currentPage && this.currentMenuItem) {
-            this.currentPage.classList.remove('slide');
+            // this.currentPage.classList.remove('slide');
+            this.preloader.fadeOutPage(this.currentPage);
             this.currentMenuItem.tagName === 'LI' ?
                 this.currentMenuItem.firstElementChild.classList.remove('selected') :
                 this.currentMenuItem.classList.remove('selected');
@@ -144,11 +154,13 @@ const AppComponent = {
         import(/* webpackChunkName: "[request]" */ `./${name}/${name}.module`)
             .then(lazyModule => {
                 lazyModule.default.init(); // todo checar se ja carregado
+                this.preloader.fadeInPage(this.currentPage);
             })
             .catch(error => {
                 ToastComponent.showToast(error)
             });
     },
+
 
     render() {
         // this.appElement.innerHTML = appTemplate(AppModel);

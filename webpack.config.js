@@ -30,7 +30,21 @@ module.exports = (env, argv) => ({
                 }
             },
             {
+                test: /app\.scss$/,
+                use: [
+                    {
+                        loader: 'style-loader',
+                        options: {
+                            insertAt: 'top',
+                        }
+                    },
+                    'css-loader',
+                    'sass-loader'
+                ]
+            },
+            {
                 test: /\.scss$/,
+                exclude: /app\.scss$/,
                 use: [
                     'style-loader',
                     MiniCssExtractPlugin.loader,
