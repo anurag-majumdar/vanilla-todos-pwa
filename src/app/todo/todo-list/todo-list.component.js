@@ -5,6 +5,7 @@ import { TodoComponent } from '../todo.component';
 
 export const TodoListComponent = {
     render(model) {
+        About
         const todosHTML = model.todos.reduce(
             (html, todo) => html + todoItemTemplate(todo),
             ''
