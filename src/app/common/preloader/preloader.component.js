@@ -19,8 +19,8 @@ const preloaderComponent = {
 
     },
 
-    fadeOutPage (page) {
-        this.animations.fadeOutPage = new TimelineMax()
+    fadeOutPageSlideInPreloader (page) {
+        this.animations.fadeOutPageSlideInPreloader = new TimelineMax()
             .to(
                 page,
                 0.4,
@@ -57,14 +57,14 @@ const preloaderComponent = {
             } else {
                 this.animations.lock();
                 this.animateLogo();
-                this.animations.fadeOutPage.play();
+                this.animations.fadeOutPageSlideInPreloader.play();
             }
         };
         startAnimationIfUnlocked();
     },
 
-    fadeInPage (page, newModule) {
-        this.animations.fadeInPage = new TimelineMax()
+    fadeInPageSlideOutPreloader (page, newModule) {
+        this.animations.fadeInPageSlideOutPreloader = new TimelineMax()
             .fromTo(
                 page,
                 1,
@@ -98,7 +98,7 @@ const preloaderComponent = {
             } else {
                 this.animations.lock();
                 newModule.init();
-                this.animations.fadeInPage.play();
+                this.animations.fadeInPageSlideOutPreloader.play();
             }
         };
         startAnimationIfUnlocked();

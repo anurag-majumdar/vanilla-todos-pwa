@@ -11,7 +11,7 @@ const HomeComponent = {
 
     animations: {
         animateLogo: (element) => {
-            const interval = 0.8,
+            const interval = 0.3,
                 lines = element.querySelectorAll("#layer1 polyline"),
                 lines2 = element.querySelectorAll("#layer2 polyline"),
                 tl = new TimelineMax(),
@@ -53,11 +53,9 @@ const HomeComponent = {
             tl.pause();
             tl2.pause();
             tl3.pause();
-            return () => {
-                tl.restart(true);
-                tl2.restart(true);
-                tl3.restart(true);
-            };
+            tl.play();
+            tl2.play();
+            tl3.play();
         }
     },
 

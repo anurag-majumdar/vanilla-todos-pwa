@@ -65,7 +65,7 @@ const AppComponent = {
     clearView () {
         if( this.currentPageID && this.currentMenuItem) {
             // this.currentPage.classList.remove('slide');
-            this.preloader.fadeOutPage(this.page);
+            this.preloader.fadeOutPageSlideInPreloader(this.page);
             this.currentMenuItem.tagName === 'LI' ?
                 this.currentMenuItem.firstElementChild.classList.remove('selected') :
                 this.currentMenuItem.classList.remove('selected');
@@ -76,7 +76,7 @@ const AppComponent = {
         import(/* webpackChunkName: "[request]" */ `./${name}/${name}.module`)
             .then(lazyModule => {
                 if(!isFirstRender) {
-                    this.preloader.fadeInPage(this.page, lazyModule.default);
+                    this.preloader.fadeInPageSlideOutPreloader(this.page, lazyModule.default);
                 } else {
                     lazyModule.default.init();
                     this.preloader.simpleFadeInPage(this.page)
