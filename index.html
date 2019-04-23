@@ -247,8 +247,8 @@
         }
 
         main {
-            height: calc(100vh - 140px);
-            overflow: hidden;
+            height: calc(100vh - 60px);
+            overflow-y: scroll;
             position: relative;
         }
 
@@ -271,12 +271,12 @@
         }
 
         footer {
-            height: 40px;
+            height: 60px;
             background: var(--gunmetal);
             color: #fff;
             display: flex;
             align-items: center;
-            padding: 40px;
+            padding: 0 40px;
         }
 
         .page__text-zone {
@@ -286,13 +286,12 @@
         }
 
         .page {
-            position: absolute;
+            position: relative;
             z-index: 1;
-            height: 100%;
+            min-height: calc(100% - 60px);
             width: 100%;
             overflow: auto;
             padding: 60px 40px 20px;
-            contain: strict;
         }
 
         .page.slide {
@@ -352,8 +351,8 @@
 
         .preloader {
             transform: translateX(-100%);
-            position: absolute;
-            top: 0;
+            position: fixed;
+            top: 60px;
             bottom: 0;
             left: 0;
             right: 0;
@@ -364,7 +363,6 @@
             flex-direction: column;
             align-items: center;
             justify-content: center;
-
         }
     </style>
 </head>
@@ -399,10 +397,9 @@
     <section class="page">
         <!--insert page content-->
     </section>
-    <!--<section id="about" class="page"></section>-->
-    <!--<section id="skills" class="page"></section>-->
-    <!--<section id="work" class="page"></section>-->
-    <!--<section id="gallery" class="page"></section>-->
+    <footer>
+        <span>&copy; 2019 Tenório Oliveira - Portfolio PWA</span>
+    </footer>
     <section class="preloader">
         <!--insert preload content-->
     </section>
@@ -410,9 +407,7 @@
 <span class="toast">
     Toast
 </span>
-<footer>
-    <span>&copy; 2019 Tenório Oliveira - Portfolio PWA</span>
-</footer>
+
 <script async src="<%= htmlWebpackPlugin.files.chunks.main.entry %>"></script>
 
 <noscript>
