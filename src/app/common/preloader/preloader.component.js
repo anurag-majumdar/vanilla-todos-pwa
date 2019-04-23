@@ -1,9 +1,9 @@
 import {TimelineMax, Power4} from 'gsap';
+import preloaderTemplate from "./preloader.template";
 
 const preloaderComponent = {
     init() {
         this.element = document.querySelector('.preloader');
-        this.svgLogo = document.getElementById('preloader-logo');
         this.animations = {
             start: null,
             end: null,
@@ -17,7 +17,6 @@ const preloaderComponent = {
             this.animations.locked = true;
         };
 
-        this.animateLogo = this.setupAnimateLogo();
     },
 
     fadeOutPage (page) {
@@ -64,7 +63,7 @@ const preloaderComponent = {
         startAnimationIfUnlocked();
     },
 
-    fadeInPage (page) {
+    fadeInPage (page, newModule) {
         this.animations.fadeInPage = new TimelineMax()
             .fromTo(
                 page,
@@ -98,6 +97,7 @@ const preloaderComponent = {
                 setTimeout(startAnimationIfUnlocked, this.animations.await);
             } else {
                 this.animations.lock();
+                newModule.init();
                 this.animations.fadeInPage.play();
             }
         };
@@ -105,10 +105,40 @@ const preloaderComponent = {
 
     },
 
-    setupAnimateLogo () {
+    simpleFadeInPage (page) {
+        this.animations.simpleFadeInPage = new TimelineMax()
+            .fromTo(
+                page,
+                1,
+                {
+                    immediateRender: true,
+                    opacity: 0,
+                    scale: 0.85,
+                    x: '0%'
+                },
+                {
+                    opacity: 1,
+                    scale: 1,
+                    onComplete: this.animations.unlock,
+                }, 0.3)
+            .pause();
+
+        const startAnimationIfUnlocked = () => {
+            if(this.animations.locked) {
+                setTimeout(startAnimationIfUnlocked, this.animations.await);
+            } else {
+                this.animations.lock();
+                this.animations.simpleFadeInPage.play();
+            }
+        };
+        startAnimationIfUnlocked();
+
+    },
+
+    setupAnimateLogo (logo) {
         const interval = 0.2,
-            lines = this.svgLogo.querySelectorAll("#layer1 polyline"),
-            lines2 = this.svgLogo.querySelectorAll("#layer2 polyline"),
+            lines = logo.querySelectorAll("#layer1 polyline"),
+            lines2 = logo.querySelectorAll("#layer2 polyline"),
             tl = new TimelineMax(),
             tl2 = new TimelineMax({yoyo:true, repeat: 30}),
             tl3 = new TimelineMax({yoyo:true, repeat: 30});
@@ -143,8 +173,8 @@ const preloaderComponent = {
 
         tl3.fromTo(firstCursor, 0.2, {strokeOpacity:1},{strokeOpacity:0.5});
         tl2.fromTo(lines2, 0.2, {strokeOpacity:1, immediateRender:false},{strokeOpacity:0.5});
-        tl.delay(0.6);
-        tl2.delay(0.6);
+        tl.delay(0.3);
+        tl2.delay(0.3);
 
         tl.pause();
         tl2.pause();
@@ -154,7 +184,17 @@ const preloaderComponent = {
             tl2.restart(true);
             tl3.restart(true);
         };
+
     },
+
+    render () {
+        this.element.innerHTML = preloaderTemplate();
+    },
+
+    afterRender () {
+        const logo = document.getElementById('preloader-logo');
+        this.animateLogo = this.setupAnimateLogo(logo);
+    }
 };
 
 export default preloaderComponent;

@@ -4,7 +4,7 @@ import {aboutTemplate} from "./about.template";
 
 const AboutComponent = {
     init() {
-        this.element = document.querySelector('#about');
+        this.element = document.querySelector('.page');
         this.render();
     },
 

@@ -1,3 +1,3 @@
-export const logoTemplate = model => `
+export const homeTemplate = model => `
     
 `;

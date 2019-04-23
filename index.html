@@ -292,14 +292,10 @@
             width: 100%;
             overflow: auto;
             padding: 60px 40px 20px;
-            transform: translateX(100%);
-        //transition: transform 0.4s ease-out;
             contain: strict;
         }
 
         .page.slide {
-            transform: translateX(0%);
-        //transition-delay: 0.6s;
         }
 
         .page__background {
@@ -320,12 +316,12 @@
         }
 
         /*home*/
-        #home.page h1 {
+        #home h1 {
             font-size: 2em;
             line-height: 1;
         }
 
-        #home.page h2 {
+        #home h2 {
             font-size: 0.8em;
             line-height: 1.15384615;
             font-weight: normal;
@@ -378,545 +374,38 @@
     <i data-target="menu" class="header__menu-btn fas fa-bars"></i>
     <nav class="navbar">
         <ul class="navbar__list">
-            <li class="navbar__list-item">
+            <li data-target="home" class="navbar__list-item">
                 <i data-target="home" class="nav-icon fas fa-home"></i>
             </li>
-            <li class="navbar__list-item">
+            <li data-target="about" class="navbar__list-item">
                 <i data-target="about" class="nav-icon far fa-user"></i>
             </li>
-            <li class="navbar__list-item">
+            <li data-target="skills" class="navbar__list-item">
                 <i data-target="skills" class="nav-icon fas fa-code"></i>
             </li>
-            <li class="navbar__list-item">
+            <li data-target="work" class="navbar__list-item">
                 <i data-target="work" class="nav-icon fas fa-briefcase"></i>
             </li>
-            <li class="navbar__list-item">
+            <li data-target="gallery" class="navbar__list-item">
                 <i data-target="gallery" class="nav-icon far fa-images"></i>
             </li>
         </ul>
     </nav>
 </header>
 <main>
-    <section id="home" class="page">
-        <section class="page__text-zone">
-            <h1>
-                <span>Hi,</span>
-                <br/>
-                <span>I'm Tenorio,</span>
-                <br/>
-                <span>Web Developer.</span>
-            </h1>
-            <h2>Front End Developer / React Developer / Angular JS </h2>
-            <button id="svgTeste">
-                contact me
-            </button>
-        </section>
-        <section class="page__background">
-            <svg viewBox="0 0 196 200" width="100%" height="auto" id="bgSVG">
-                <title>t logo</title>
-                <g style="z-index: 0">
-                    <title>Layer 1</title>
-                    <g stroke="null" id="layer1">
-                        <polyline
-                                stroke="#94da00"
-                                points="15.277774810791016,14.981477737426758 45.277774810791016,14.981477737426758 75.27777481079102,14.981477737426758 "
-                                stroke-width="28"
-                                fill="none"
-                                stroke-linejoin="round"
-                                stroke-linecap="round"
-                                id="block1"
-                        />
-                        <polyline
-                                stroke="#00a882"
-                                points="109.77777481079102,14.981477737426758 122.77777481079102,14.981477737426758 135.77777481079102,14.981477737426758 "
-                                stroke-width="28"
-                                fill="none"
-                                stroke-linejoin="round"
-                                stroke-linecap="round"
-                                id="block2"
-                        />
-                        <polyline
-                                stroke="#ff3800"
-                                points="170.27777481079102,15.981477737426758 175.77777481079102,15.981477737426758 181.27777481079102,15.981477737426758 "
-                                stroke-width="28"
-                                fill="none"
-                                stroke-linejoin="round"
-                                stroke-linecap="round"
-                                id="block3"
-                        />
-                        <polyline
-                                stroke="#00bf6e"
-                                points="15.777774810791016,57.98147773742676 23.277774810791016,57.98147773742676 30.777774810791016,57.98147773742676 "
-                                stroke-width="28"
-                                fill="none"
-                                stroke-linejoin="round"
-                                stroke-linecap="round"
-                                id="block4"
-                        />
-                        <polyline
-                                stroke="#ffa800"
-                                points="65.77777481079102,57.98147773742676 78.77777481079102,57.98147773742676 91.77777481079102,57.98147773742676 "
-                                stroke-width="28"
-                                fill="none"
-                                stroke-linejoin="round"
-                                stroke-linecap="round"
-                                id="block5"
-                        />
-                        <polyline
-                                stroke="#94da00"
-                                points="124.77777481079102,57.98147773742676 152.27777481079102,57.98147773742676 179.77777481079102,57.98147773742676 "
-                                stroke-width="28"
-                                fill="none"
-                                stroke-linejoin="round"
-                                stroke-linecap="round"
-                                id="block6"
-                        />
-                        <polyline
-                                stroke="#b3b3b0"
-                                points="68.77777481079102,99.98147773742676 69.77777481079102,99.98147773742676 70.77777481079102,99.98147773742676 "
-                                stroke-width="28"
-                                fill="none"
-                                stroke-linejoin="round"
-                                stroke-linecap="round"
-                                id="block7"
-                        />
-                        <polyline
-                                stroke="#ff402c"
-                                points="104.27777481079102,99.98147773742676 114.27777481079102,99.98147773742676 124.27777481079102,99.98147773742676 "
-                                stroke-width="28"
-                                fill="none"
-                                stroke-linejoin="round"
-                                stroke-linecap="round"
-                                id="block8"
-                        />
-                        <polyline
-                                stroke="#00bf6e"
-                                points="70.27777481079102,142.9814853668213 80.77777481079102,142.9814853668213 91.27777481079102,142.9814853668213 "
-                                stroke-width="28"
-                                fill="none"
-                                stroke-linejoin="round"
-                                stroke-linecap="round"
-                                id="block9"
-                        />
-                        <polyline
-                                stroke="#b3b3b0"
-                                points="124.77777481079102,142.9814853668213 124.27777481079102,142.9814853668213 123.77777481079102,142.9814853668213 "
-                                stroke-width="28"
-                                fill="none"
-                                stroke-linejoin="round"
-                                stroke-linecap="round"
-                                id="block10"
-                        />
-                        <polyline
-                                stroke="#b3b3b0"
-                                points="74.77777481079102,184.9814853668213 72.77777481079102,184.9814853668213 70.77777481079102,184.9814853668213 "
-                                stroke-width="28"
-                                fill="none"
-                                stroke-linejoin="round"
-                                stroke-linecap="round"
-                                id="block11"
-                        />
-                        <polyline
-                                stroke="#00b08a"
-                                points="111.27777481079102,184.9814853668213 117.27777481079102,184.9814853668213 123.27777481079102,184.9814853668213 "
-                                stroke-width="28"
-                                fill="none"
-                                stroke-linejoin="round"
-                                stroke-linecap="round"
-                                id="block12"
-                        />
-                    </g>
-                </g>
-                <g style="z-index: 1">
-                    <title>Layer 2</title>
-                    <g stroke="null" id="layer2">
-                        <polyline
-                                stroke="white"
-                                points="15.277774810791016,14.981477737426758 45.277774810791016,14.981477737426758 75.27777481079102,14.981477737426758 "
-                                stroke-width="28"
-                                fill="none"
-                                stroke-linejoin="round"
-                                stroke-linecap="round"
-                                id="block1"
-
-                        />
-                        <polyline
-                                stroke="white"
-                                points="109.77777481079102,14.981477737426758 122.77777481079102,14.981477737426758 135.77777481079102,14.981477737426758 "
-                                stroke-width="28"
-                                fill="none"
-                                stroke-linejoin="round"
-                                stroke-linecap="round"
-                                id="block2"
-
-                        />
-                        <polyline
-                                stroke="white"
-                                points="170.27777481079102,15.981477737426758 175.77777481079102,15.981477737426758 181.27777481079102,15.981477737426758 "
-                                stroke-width="28"
-                                fill="none"
-                                stroke-linejoin="round"
-                                stroke-linecap="round"
-                                id="block3"
-
-
-                        />
-                        <polyline
-                                stroke="white"
-                                points="15.777774810791016,57.98147773742676 23.277774810791016,57.98147773742676 30.777774810791016,57.98147773742676 "
-                                stroke-width="28"
-                                fill="none"
-                                stroke-linejoin="round"
-                                stroke-linecap="round"
-                                id="block4"
-
-
-                        />
-                        <polyline
-                                stroke="white"
-                                points="65.77777481079102,57.98147773742676 78.77777481079102,57.98147773742676 91.77777481079102,57.98147773742676 "
-                                stroke-width="28"
-                                fill="none"
-                                stroke-linejoin="round"
-                                stroke-linecap="round"
-                                id="block5"
-
-
-                        />
-                        <polyline
-                                stroke="white"
-                                points="124.77777481079102,57.98147773742676 152.27777481079102,57.98147773742676 179.77777481079102,57.98147773742676 "
-                                stroke-width="28"
-                                fill="none"
-                                stroke-linejoin="round"
-                                stroke-linecap="round"
-                                id="block6"
-
-
-                        />
-                        <polyline
-                                stroke="white"
-                                points="68.77777481079102,99.98147773742676 69.77777481079102,99.98147773742676 70.77777481079102,99.98147773742676 "
-                                stroke-width="28"
-                                fill="none"
-                                stroke-linejoin="round"
-                                stroke-linecap="round"
-                                id="block7"
-
-
-                        />
-                        <polyline
-                                stroke="white"
-                                points="104.27777481079102,99.98147773742676 114.27777481079102,99.98147773742676 124.27777481079102,99.98147773742676 "
-                                stroke-width="28"
-                                fill="none"
-                                stroke-linejoin="round"
-                                stroke-linecap="round"
-                                id="block8"
-                        />
-                        <polyline
-                                stroke="white"
-                                points="70.27777481079102,142.9814853668213 80.77777481079102,142.9814853668213 91.27777481079102,142.9814853668213 "
-                                stroke-width="28"
-                                fill="none"
-                                stroke-linejoin="round"
-                                stroke-linecap="round"
-                                id="block9"
-                        />
-                        <polyline
-                                stroke="white"
-                                points="124.77777481079102,142.9814853668213 124.27777481079102,142.9814853668213 123.77777481079102,142.9814853668213 "
-                                stroke-width="28"
-                                fill="none"
-                                stroke-linejoin="round"
-                                stroke-linecap="round"
-                                id="block10"
-                        />
-                        <polyline
-                                stroke="white"
-                                points="74.77777481079102,184.9814853668213 72.77777481079102,184.9814853668213 70.77777481079102,184.9814853668213 "
-                                stroke-width="28"
-                                fill="none"
-                                stroke-linejoin="round"
-                                stroke-linecap="round"
-                                id="block11"
-                        />
-                        <polyline
-                                stroke="white"
-                                points="111.27777481079102,184.9814853668213 117.27777481079102,184.9814853668213 123.27777481079102,184.9814853668213 "
-                                stroke-width="28"
-                                fill="none"
-                                stroke-linejoin="round"
-                                stroke-linecap="round"
-                                id="block12"
-                        />
-                    </g>
-                </g>
-            </svg>
-        </section>
+    <section class="page">
+        <!--insert page content-->
     </section>
-    <section id="about" class="page"></section>
-    <section id="skills" class="page"></section>
-    <section id="work" class="page"></section>
-    <section id="gallery" class="page"></section>
-    <div class="preloader">
-        <svg viewBox="0 0 196 200" width="100%" height="auto"  style="width: 80px; height: 100px;" id="preloader-logo">
-            <title>t logo</title>
-            <g style="z-index: 0">
-                <title>Layer 1</title>
-                <g stroke="null" id="layer1">
-                    <polyline
-                            stroke="#FF9F1C"
-                            points="15.277774810791016,14.981477737426758 45.277774810791016,14.981477737426758 75.27777481079102,14.981477737426758 "
-                            stroke-width="28"
-                            fill="none"
-                            stroke-linejoin="round"
-                            stroke-linecap="round"
-                            id="block1"
-                    />
-                    <polyline
-                            stroke="#F2AB48"
-                            points="109.77777481079102,14.981477737426758 122.77777481079102,14.981477737426758 135.77777481079102,14.981477737426758 "
-                            stroke-width="28"
-                            fill="none"
-                            stroke-linejoin="round"
-                            stroke-linecap="round"
-                            id="block2"
-                    />
-                    <polyline
-                            stroke="#FF9400"
-                            points="170.27777481079102,15.981477737426758 175.77777481079102,15.981477737426758 181.27777481079102,15.981477737426758 "
-                            stroke-width="28"
-                            fill="none"
-                            stroke-linejoin="round"
-                            stroke-linecap="round"
-                            id="block3"
-                    />
-                    <polyline
-                            stroke="#F2AB48"
-                            points="15.777774810791016,57.98147773742676 23.277774810791016,57.98147773742676 30.777774810791016,57.98147773742676 "
-                            stroke-width="28"
-                            fill="none"
-                            stroke-linejoin="round"
-                            stroke-linecap="round"
-                            id="block4"
-                    />
-                    <polyline
-                            stroke="#EF8B00"
-                            points="65.77777481079102,57.98147773742676 78.77777481079102,57.98147773742676 91.77777481079102,57.98147773742676 "
-                            stroke-width="28"
-                            fill="none"
-                            stroke-linejoin="round"
-                            stroke-linecap="round"
-                            id="block5"
-                    />
-                    <polyline
-                            stroke="#F49209"
-                            points="124.77777481079102,57.98147773742676 152.27777481079102,57.98147773742676 179.77777481079102,57.98147773742676 "
-                            stroke-width="28"
-                            fill="none"
-                            stroke-linejoin="round"
-                            stroke-linecap="round"
-                            id="block6"
-                    />
-                    <polyline
-                            stroke="#FF9F1C"
-                            points="68.77777481079102,99.98147773742676 69.77777481079102,99.98147773742676 70.77777481079102,99.98147773742676 "
-                            stroke-width="28"
-                            fill="none"
-                            stroke-linejoin="round"
-                            stroke-linecap="round"
-                            id="block7"
-                    />
-                    <polyline
-                            stroke="#F2AB48"
-                            points="104.27777481079102,99.98147773742676 114.27777481079102,99.98147773742676 124.27777481079102,99.98147773742676 "
-                            stroke-width="28"
-                            fill="none"
-                            stroke-linejoin="round"
-                            stroke-linecap="round"
-                            id="block8"
-                    />
-                    <polyline
-                            stroke="#FF9400"
-                            points="70.27777481079102,142.9814853668213 80.77777481079102,142.9814853668213 91.27777481079102,142.9814853668213 "
-                            stroke-width="28"
-                            fill="none"
-                            stroke-linejoin="round"
-                            stroke-linecap="round"
-                            id="block9"
-                    />
-                    <polyline
-                            stroke="#F49209"
-                            points="124.77777481079102,142.9814853668213 124.27777481079102,142.9814853668213 123.77777481079102,142.9814853668213 "
-                            stroke-width="28"
-                            fill="none"
-                            stroke-linejoin="round"
-                            stroke-linecap="round"
-                            id="block10"
-                    />
-                    <polyline
-                            stroke="#FF9F1C"
-                            points="74.77777481079102,184.9814853668213 72.77777481079102,184.9814853668213 70.77777481079102,184.9814853668213 "
-                            stroke-width="28"
-                            fill="none"
-                            stroke-linejoin="round"
-                            stroke-linecap="round"
-                            id="block11"
-                    />
-                    <polyline
-                            stroke="#FF9400"
-                            points="111.27777481079102,184.9814853668213 117.27777481079102,184.9814853668213 123.27777481079102,184.9814853668213 "
-                            stroke-width="28"
-                            fill="none"
-                            stroke-linejoin="round"
-                            stroke-linecap="round"
-                            id="block12"
-                    />
-                </g>
-            </g>
-            <g style="z-index: 1">
-                <title>Layer 2</title>
-                <g stroke="null" id="layer2">
-                    <polyline
-                            stroke="white"
-                            points="15.277774810791016,14.981477737426758 45.277774810791016,14.981477737426758 75.27777481079102,14.981477737426758 "
-                            stroke-width="28"
-                            fill="none"
-                            stroke-linejoin="round"
-                            stroke-linecap="round"
-                            id="block1"
-
-                    />
-                    <polyline
-                            stroke="white"
-                            points="109.77777481079102,14.981477737426758 122.77777481079102,14.981477737426758 135.77777481079102,14.981477737426758 "
-                            stroke-width="28"
-                            fill="none"
-                            stroke-linejoin="round"
-                            stroke-linecap="round"
-                            id="block2"
-
-                    />
-                    <polyline
-                            stroke="white"
-                            points="170.27777481079102,15.981477737426758 175.77777481079102,15.981477737426758 181.27777481079102,15.981477737426758 "
-                            stroke-width="28"
-                            fill="none"
-                            stroke-linejoin="round"
-                            stroke-linecap="round"
-                            id="block3"
-
-
-                    />
-                    <polyline
-                            stroke="white"
-                            points="15.777774810791016,57.98147773742676 23.277774810791016,57.98147773742676 30.777774810791016,57.98147773742676 "
-                            stroke-width="28"
-                            fill="none"
-                            stroke-linejoin="round"
-                            stroke-linecap="round"
-                            id="block4"
-
-
-                    />
-                    <polyline
-                            stroke="white"
-                            points="65.77777481079102,57.98147773742676 78.77777481079102,57.98147773742676 91.77777481079102,57.98147773742676 "
-                            stroke-width="28"
-                            fill="none"
-                            stroke-linejoin="round"
-                            stroke-linecap="round"
-                            id="block5"
-
-
-                    />
-                    <polyline
-                            stroke="white"
-                            points="124.77777481079102,57.98147773742676 152.27777481079102,57.98147773742676 179.77777481079102,57.98147773742676 "
-                            stroke-width="28"
-                            fill="none"
-                            stroke-linejoin="round"
-                            stroke-linecap="round"
-                            id="block6"
-
-
-                    />
-                    <polyline
-                            stroke="white"
-                            points="68.77777481079102,99.98147773742676 69.77777481079102,99.98147773742676 70.77777481079102,99.98147773742676 "
-                            stroke-width="28"
-                            fill="none"
-                            stroke-linejoin="round"
-                            stroke-linecap="round"
-                            id="block7"
-
-
-                    />
-                    <polyline
-                            stroke="white"
-                            points="104.27777481079102,99.98147773742676 114.27777481079102,99.98147773742676 124.27777481079102,99.98147773742676 "
-                            stroke-width="28"
-                            fill="none"
-                            stroke-linejoin="round"
-                            stroke-linecap="round"
-                            id="block8"
-
-
-                    />
-                    <polyline
-                            stroke="white"
-                            points="70.27777481079102,142.9814853668213 80.77777481079102,142.9814853668213 91.27777481079102,142.9814853668213 "
-                            stroke-width="28"
-                            fill="none"
-                            stroke-linejoin="round"
-                            stroke-linecap="round"
-                            id="block9"
-
-
-                    />
-                    <polyline
-                            stroke="white"
-                            points="124.77777481079102,142.9814853668213 124.27777481079102,142.9814853668213 123.77777481079102,142.9814853668213 "
-                            stroke-width="28"
-                            fill="none"
-                            stroke-linejoin="round"
-                            stroke-linecap="round"
-                            id="block10"
-
-
-                    />
-                    <polyline
-                            stroke="white"
-                            points="74.77777481079102,184.9814853668213 72.77777481079102,184.9814853668213 70.77777481079102,184.9814853668213 "
-                            stroke-width="28"
-                            fill="none"
-                            stroke-linejoin="round"
-                            stroke-linecap="round"
-                            id="block11"
-
-
-                    />
-                    <polyline
-                            stroke="white"
-                            points="111.27777481079102,184.9814853668213 117.27777481079102,184.9814853668213 123.27777481079102,184.9814853668213 "
-                            stroke-width="28"
-                            fill="none"
-                            stroke-linejoin="round"
-                            stroke-linecap="round"
-                            id="block12"
-
-
-                    />
-                </g>
-            </g>
-        </svg>
-        <span>Tenório is Coding...</span>
-
-    </div>
+    <!--<section id="about" class="page"></section>-->
+    <!--<section id="skills" class="page"></section>-->
+    <!--<section id="work" class="page"></section>-->
+    <!--<section id="gallery" class="page"></section>-->
+    <section class="preloader">
+        <!--insert preload content-->
+    </section>
 </main>
 <span class="toast">
-            Toast
+    Toast
 </span>
 <footer>
     <span>&copy; 2019 Tenório Oliveira - Portfolio PWA</span>
