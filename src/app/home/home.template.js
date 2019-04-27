@@ -8,11 +8,11 @@ export const homeTemplate = (model) => {
                 <h1>
                     <span>Hi,</span>
                     <br/>
-                    <span>I'm Tenorio,</span>
+                    <span>I'm Tenório,</span>
                     <br/>
                     <span>Web Developer.</span>
                 </h1>
-                <h2>Front End Developer / React Developer / Angular JS </h2>
+                <h2 class="subheading">Front End Engineer / React / Angular JS / Node</h2>
                 <button id="svgTeste">
                     contact me
                 </button>

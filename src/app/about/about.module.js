@@ -1,5 +1,6 @@
 import AboutComponent from "./about.component";
-import css from '../../assets/scss/about.scss';
+import '../../assets/scss/about.scss';
+import '../../assets/scss/page.scss';
 const AboutModule = {
 
     init() {

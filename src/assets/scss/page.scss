@@ -1,0 +1,31 @@
+.page {
+    &__heading {
+        line-height: 1.1;
+        font-size: 2.2em;
+        color: var(--saffron);
+        @media (min-width: 43.75em) {
+            font-size: 2.5em;
+            line-height: 1.125;
+        }
+        @media (min-width: 56.25em) {
+            font-size: 2.8em;
+            line-height: 1.05;
+        }
+    }
+
+    &__paragraph {
+        font-size: 0.8em;
+        max-width: 65ch;
+        @media (min-width: 43.75em) {
+            font-size: 1em;
+            line-height: 1.125;
+        }
+    }
+
+    &__pic {
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+}

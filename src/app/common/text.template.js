@@ -1,5 +1,5 @@
 export const paragraphTemplate = paragraph => `
-    <p>${paragraph}</p>
+    <p class="page__paragraph">${paragraph}</p>
 `;
 
 export const spanTemplate = span => `

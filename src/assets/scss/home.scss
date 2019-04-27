@@ -1,0 +1,42 @@
+/*home*/
+#home h1 {
+    line-height: 1.1;
+    font-size: 1.9em;
+    margin: 0 0 1rem 0;
+}
+
+@media (min-width: 43.75em) {
+    #home h1 {
+        font-size: 2.3em;
+        line-height: 1.125;
+    }
+}
+
+@media (min-width: 56.25em) {
+    #home h1 {
+        font-size: 2.8em;
+        line-height: 1.05;
+    }
+}
+
+#home h2 {
+    font-size: 0.7em;
+    line-height: 1.15384615;
+    color: var(--saffron);
+    width: 28ch;
+}
+
+@media (min-width: 43.75em) {
+    #home h2 {
+        font-size: 1em;
+        /* 2.5x body copy size = 40px */
+        line-height: 1.125;
+    }
+}
+
+@media (min-width: 56.25em) {
+    #home h2 {
+        font-size: 1.3em;
+        line-height: 1.05;
+    }
+}

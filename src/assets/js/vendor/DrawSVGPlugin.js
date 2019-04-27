@@ -85,5 +85,5 @@ var _gsScope = "undefined" != typeof module && module.exports && "undefined" != 
   var t = function () {
     return (_gsScope.GreenSockGlobals || _gsScope).DrawSVGPlugin
   };
-  "undefined" != typeof module && module.exports ? (require("../../../node_modules/gsap/TweenLite.js"), module.exports = t()) : "function" == typeof define && define.amd && define(["../../../node_modules/gsap/TweenLite.js"], t)
+  "undefined" != typeof module && module.exports ? (require("../../../../node_modules/gsap/TweenLite.js"), module.exports = t()) : "function" == typeof define && define.amd && define(["../../../../node_modules/gsap/TweenLite.js"], t)
 }();

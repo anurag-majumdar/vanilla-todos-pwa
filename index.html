@@ -6,9 +6,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
     <title>Tenor.io Portfolio</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:800|PT+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@typopro/web-cooper-hewitt@3.7.5/TypoPRO-CooperHewitt-Light.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
           integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <script src="/public/js/fontfaceobserver.js"></script>
+    <script type="text/javascript">
+        (function() {
+            document.documentElement.className += " wf-inactive";
+
+            // Optimization for Repeat Views
+            if( sessionStorage.foutFontsLoaded ) {
+                document.documentElement.classList.remove("wf-inactive");
+                document.documentElement.classList.add("wf-active");
+                return;
+            }
+
+            var fontA = new FontFaceObserver('TypoPRO Cooper Hewitt', {
+                weight: 300,
+                style: 'normal'
+            });
+            var fontB = new FontFaceObserver('Open Sans', {
+                weight: 800,
+                style: 'normal'
+            });
+            var fontC = new FontFaceObserver('PT Sans', {
+                weight: 400,
+                style: 'normal'
+            });
+
+            Promise.all([fontA.load(), fontB.load(), fontC.load()]).then(function () {
+                document.documentElement.classList.remove("wf-inactive");
+                document.documentElement.classList.add("wf-active");
+                // Optimization for Repeat Views
+                sessionStorage.foutFontsLoaded = true;
+            });
+
+        })();
+    </script>
     <style>
+
 
         :root{
             --white: white;
@@ -22,7 +59,8 @@
 
         html {
             box-sizing: border-box;
-            font: 16px 'Oxygen', Helvetica;
+            font-size: 16px;
+            font-family: 'PT Sans', sans-serif;
             color: var(--mint-cream);
         }
 
@@ -33,8 +71,19 @@
         }
 
         /*start tipography*/
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Open Sans', sans-serif;
+            font-weight: 800;
+        }
+        .subheading{
+            font-family: 'TypoPRO Cooper Hewitt', sans-serif;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
         body, caption, th, td, input, textarea, select, option, legend, fieldset, h1, h2, h3, h4, h5, h6 {
             font-size-adjust: 0.5;
+            margin: 0 0 1.5rem 0;
         }
 
         #page {
@@ -236,10 +285,6 @@
             transform: scale(1.5);
         }
 
-        h1 {
-            margin: 0;
-        }
-
 
         .banner {
             text-decoration: none;
@@ -259,6 +304,7 @@
             color: #F9C22E;
             padding: 10px 15px;
             text-transform: uppercase;
+            font-family: 'TypoPRO Cooper Hewitt', sans-serif;
         }
 
         .button {
@@ -279,6 +325,10 @@
             padding: 0 40px;
         }
 
+        footer span {
+            font-size: 0.8em;
+        }
+
         .page__text-zone {
             margin-top: 60px;
             z-index: 1;
@@ -291,7 +341,7 @@
             min-height: calc(100% - 60px);
             width: 100%;
             overflow: auto;
-            padding: 60px 40px 20px;
+            padding: 60px 32px 20px;
         }
 
         .page.slide {
@@ -317,18 +367,7 @@
             color: purple;
         }
 
-        /*home*/
-        #home h1 {
-            font-size: 2em;
-            line-height: 1;
-        }
 
-        #home h2 {
-            font-size: 0.8em;
-            line-height: 1.15384615;
-            font-weight: normal;
-            color: var(--saffron);
-        }
 
         .toast {
             position: fixed;

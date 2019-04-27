@@ -1,5 +1,5 @@
 import HomeComponent from "./home.component";
-import css from '../../assets/scss/about.scss';
+import css from '../../assets/scss/home.scss';
 const HomeModule = {
 
     init() {

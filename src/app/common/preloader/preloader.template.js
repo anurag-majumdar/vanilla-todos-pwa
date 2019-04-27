@@ -7,7 +7,7 @@ const preloaderTemplate = () => {
         <div style="width: 80px; height: 100px;">
             ${logo}
         </div>
-        <span>Tenório is Coding...</span>
+        <h6 class="subheading">Tenório is Coding...</h6>
     </div>
 `
 };

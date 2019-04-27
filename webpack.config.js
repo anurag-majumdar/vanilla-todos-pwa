@@ -70,14 +70,14 @@ module.exports = (env, argv) => ({
         }),
         new WebpackMd5Hash(),
         new CopyWebpackPlugin([
-            // {
-            //     from: './src/assets',
-            //     to: './assets'
-            // },
-            // {
-            //     from: 'manifest.json',
-            //     to: 'manifest.json'
-            // }
+            {
+                from: './src/public',
+                to: './public'
+            },
+            {
+                from: 'manifest.json',
+                to: 'manifest.json'
+            }
         ]),
         new CompressionPlugin({
             algorithm: 'gzip'

@@ -1,6 +1,6 @@
 import ToastComponent from './common/toast.component'
 import { TimelineMax } from 'gsap';
-import DrawSVGplugin from './../assets/js/DrawSVGPlugin';
+import DrawSVGplugin from '../assets/js/vendor/DrawSVGPlugin';
 import preloader from "./common/preloader/preloader.component";
 
 const AppComponent = {

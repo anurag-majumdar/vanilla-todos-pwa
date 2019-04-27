@@ -5,9 +5,14 @@ export const aboutTemplate = (model) => {
         .reduce((html, todo) => html + paragraphTemplate(todo), '');
 
     return `
-        <section class="page__text-zone">
-            <h1>${model.title}</h1>
-            ${paragraphsHTML}
+        <section id="about">
+            <section class="page__text-zone">
+                <h1 class="page__heading">${model.title}</h1>
+                ${paragraphsHTML}
+                <div class="page__pic">
+                    <img src="/public/images/me.png"/>
+                </div>
+            </section>
         </section>
     `;
 }
