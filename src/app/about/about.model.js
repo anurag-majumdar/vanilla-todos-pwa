@@ -1,10 +1,11 @@
 const AboutModel = {
     title: 'About me',
     paragraphs: [
-        'When you love yourself, you glow from the inside, attract people who love, respect, & appreciate your energy. Everything starts with & how you feel about you. Start feeling worthy & valuable.',
-        'Accordingly, if we run npm run build it will trigger a production build, and if we run npm run serve it will trigger a development flow with a local development server.',
-        'The concepts regarding the service worker file we talked about will be the same. Here is the script in action',
-        'This service worker build script really helped me a lot in caching files easily. I am currently using this for my own side projects due to its simplicity and great ease of tackling the caching problem.',
+        'Graduated with a bachelor\'s degree in computer science from the University of Pernambuco, 30 years. The eldest son of a housewife and a taxi driver, I understood early on that the road to success was study. I got in a computer course because I was passionate about games and wanted to work with it to exercise my creativity ... but I was ‘kidnapped’ by the web systems area, particularly the front end. I may not animate Mario, but I animate a div like nobody else: P',
+        'In 2015 I participated in the development of a process consultation system for the federal public ministry, a SPA in AngularJS and the back end in Java.',
+        'Then, in 2016, I worked in one of the largest projects in Latin America, EFISCO, a tax collection system for the state of pernambuco. At EFISCO I worked exclusively with Java and I noticed that working at the front made me happier professionally. I decided to look for new challenges in this area.',
+        'Finally in 2017, I was hired to Accenture as a front end developer. Working with an emphasis on FED I was able to improve my knowledge of CSS, HTML and JS. I was promoted to Senior Analyst and assumed the role of technical project leader.',
+        'Nowadays, still at Accenture, I have focused on becoming a performance and accessibility specialist on the front end.',
     ]
 };
 

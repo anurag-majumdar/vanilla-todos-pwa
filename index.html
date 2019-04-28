@@ -64,6 +64,48 @@
             color: var(--mint-cream);
         }
 
+        .no-desktop{
+            display: none;
+        }
+
+        @media (min-width: 43.75em) {
+            .no-desktop {
+                background: var(--raisin-black);
+                position: fixed;
+                width: 100vw;
+                height: 100vh;
+                z-index: 10000;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .forbidden-circle {
+                height: 100px;
+                width: 100px;
+                border: 6px solid var(--saffron);
+                border-radius: 50%;
+                position: relative;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 51px;
+                color: var(--mint-cream);
+                margin-bottom: 40px;
+            }
+
+            .forbidden-circle:after{
+                content: '';
+                position: absolute;
+                left: 45%;
+                transform: rotate(45deg) translateX(-19%);
+                width: 9px;
+                height: 100%;
+                background: var( --saffron);
+            }
+        }
+
         *,
         *:after,
         *:before {
@@ -407,8 +449,12 @@
 </head>
 
 <body>
-
-<body>
+<div class="no-desktop">
+    <div class="forbidden-circle">
+        <i class="fas fa-desktop"></i>
+    </div>
+    <h1 class="subheading">Coming Soon</h1>
+</div>
 <header>
     <h3><a class="banner">Tenor.io</a></h3>
     <i data-target="menu" class="header__menu-btn fas fa-bars"></i>
@@ -453,7 +499,6 @@
     This site uses JavaScript. Please enable JavaScript in your
     browser.
 </noscript>
-</body>
 </body>
 
 </html>

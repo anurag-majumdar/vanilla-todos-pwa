@@ -14,7 +14,7 @@ const AboutComponent = {
     },
 
     afterRender() {
-
+        document.querySelector('main').scrollTop = 0;
     }
 };
 

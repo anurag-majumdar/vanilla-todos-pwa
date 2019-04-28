@@ -65,6 +65,8 @@ const HomeComponent = {
     },
 
     afterRender() {
+        document.querySelector('main').scrollTop = 0;
+
         const svgLogo = document.getElementById('bgSVG'),
               svgButton = document.getElementById('svgTeste');
 

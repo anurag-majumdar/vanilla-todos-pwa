@@ -1,0 +1,65 @@
+
+
+.skill{
+  width: 100%;
+  border: 1px solid var(--saffron);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  padding: 8px;
+  margin-bottom: 16px;
+  opacity: 0;
+  transition: all 0.6s ease-in-out;
+}
+
+.skill:nth-child(even){
+  transform: translateX(100%);
+}
+
+.skill:nth-child(odd){
+  transform: translateX(-100%);
+}
+
+.skill.skill--slide-in{
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.skill:nth-child(even){
+  flex-direction: row-reverse;
+}
+
+.skill__media {
+  min-height: 60px;
+  min-width: 60px;
+  border: 1px solid var(--saffron);
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-right: 8px;
+  position: relative;
+  overflow: hidden;
+}
+.skill__progress{
+  background: #8a7505;
+  height: 0%;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  transition: height 2s ease-in-out;
+}
+.skill__icon {
+  font-size: 32px;
+  position: absolute;
+}
+.skill__text {
+  font-size: 0.8em;
+}
+
+.skill__text .title {
+  font-weight: bold;
+  font-size: 1.1em;
+  color: var(--saffron);
+}

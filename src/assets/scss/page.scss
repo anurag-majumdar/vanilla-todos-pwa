@@ -16,6 +16,7 @@
     &__paragraph {
         font-size: 0.8em;
         max-width: 65ch;
+        hyphens: auto;
         @media (min-width: 43.75em) {
             font-size: 1em;
             line-height: 1.125;
