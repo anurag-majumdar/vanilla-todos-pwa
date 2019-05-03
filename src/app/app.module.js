@@ -1,7 +1,7 @@
 import AppComponent from './app.component';
 import ToastComponent from "./common/toast.component";
 import DrawSVGplugin from '../assets/js/vendor/DrawSVGPlugin';
-import '../assets/scss/app_old.scss';
+
 
 export const App = {
     init() {

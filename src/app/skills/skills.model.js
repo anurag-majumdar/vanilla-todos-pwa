@@ -25,7 +25,7 @@ const SkillsModel = {
         }, {
             title: 'Performance and Audit',
             icon: 'fas fa-tachometer-alt',
-            progress: 70,
+            progress: 20,
             text: 'Lately my focus has changed for performance and auditing of web apps, the use of service workers and better strategies to enhance user xp',
         },
         ]

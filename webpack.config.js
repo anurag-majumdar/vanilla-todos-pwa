@@ -8,7 +8,7 @@ const CompressionPlugin = require('compression-webpack-plugin');
 
 module.exports = (env, argv) => ({
     entry: {
-        main: './src/main.js'
+        main: ['./src/main.js', './src/assets/scss/app.scss']
     },
     devtool: argv.mode === 'production' ? false : 'source-map',
     output: {
@@ -30,23 +30,8 @@ module.exports = (env, argv) => ({
                 }
             },
             {
-                test: /app\.scss$/,
-                use: [
-                    {
-                        loader: 'style-loader',
-                        options: {
-                            insertAt: 'top',
-                        }
-                    },
-                    'css-loader',
-                    'sass-loader'
-                ]
-            },
-            {
                 test: /\.scss$/,
-                exclude: /app\.scss$/,
                 use: [
-                    'style-loader',
                     MiniCssExtractPlugin.loader,
                     'css-loader',
                     'sass-loader'
@@ -64,19 +49,15 @@ module.exports = (env, argv) => ({
         }),
         new HtmlWebpackPlugin({
             inject: false,
-            hash: true,
+            hash: false,
             template: './index.html',
-            filename: 'index.html'
+            filename: 'index.html',
         }),
         new WebpackMd5Hash(),
         new CopyWebpackPlugin([
             {
                 from: './src/public',
                 to: './public'
-            },
-            {
-                from: 'manifest.json',
-                to: 'manifest.json'
             }
         ]),
         new CompressionPlugin({

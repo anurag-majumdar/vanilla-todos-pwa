@@ -7,7 +7,7 @@ export const skillTemplate = (model) => {
             <i class="${model.icon} skill__icon"></i>
           </div>
           <div class="skill__text">
-            <span class="title">${model.title}</span>
+            <span class="title subheading">${model.title}</span>
             <br/>
             ${model.text}
           </div>

@@ -1,0 +1,888 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="6b682a4e-7496-4500-8b96-591d5f6c0295" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/app/work/project/project.template.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/work/work.component.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/work/work.model.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/work/work.module.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/work/work.template.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/scss/app.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/scss/work.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/public/images/enel.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/public/images/petrobras.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/public/images/porto.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/public/images/santander.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/public/images/vale.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/app.module.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app.module.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/skills/skill/skill.template.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/skills/skill/skill.template.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/skills/skills.model.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/skills/skills.model.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/todo/add-todo/add-todo.component.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/example/add-todo/add-todo.component.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/todo/add-todo/add-todo.model.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/example/add-todo/add-todo.model.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/todo/add-todo/add-todo.template.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/example/add-todo/add-todo.template.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/todo/todo-item/todo-item.template.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/example/todo-item/todo-item.template.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/todo/todo-list/todo-list.component.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/example/todo-list/todo-list.component.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/todo/todo-list/todo-list.template.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/example/todo-list/todo-list.template.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/todo/todo.component.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/example/todo.component.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/todo/todo.model.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/example/todo.model.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/todo/todo.module.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/example/todo.module.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/scss/app_old.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/public/fonts/CooperHewitt-Light.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/public/fonts/CooperHewitt-Light.otf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/public/fonts/CooperHewitt-Light.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/public/fonts/CooperHewitt-Light.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/public/js/fontfaceobserver.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.config.js" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/.tmp/" />
+    <ignored path="$PROJECT_DIR$/temp/" />
+    <ignored path="$PROJECT_DIR$/tmp/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="-1324107497">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="8" />
+          <entry key="project.open.time.0" value="1" />
+          <entry key="project.open.time.1" value="3" />
+          <entry key="project.open.time.2" value="5" />
+          <entry key="project.open.time.8" value="1" />
+          <entry key="project.open.time.9" value="1" />
+          <entry key="project.opened" value="11" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="LICENSE" value="1" />
+          <entry key="css" value="5" />
+          <entry key="gif" value="1" />
+          <entry key="html" value="25" />
+          <entry key="js" value="158" />
+          <entry key="json" value="11" />
+          <entry key="md" value="2" />
+          <entry key="png" value="4" />
+          <entry key="scss" value="13" />
+          <entry key="ts" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="CSS" value="5" />
+          <entry key="HTML" value="25" />
+          <entry key="Image" value="5" />
+          <entry key="JSON" value="11" />
+          <entry key="JavaScript" value="158" />
+          <entry key="PLAIN_TEXT" value="3" />
+          <entry key="SCSS" value="13" />
+          <entry key="TypeScript" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="css" value="72" />
+          <entry key="html" value="2731" />
+          <entry key="js" value="8020" />
+          <entry key="json" value="49" />
+          <entry key="scss" value="476" />
+          <entry key="txt" value="187" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="CSS" value="72" />
+          <entry key="HTML" value="2768" />
+          <entry key="JSON" value="49" />
+          <entry key="JavaScript" value="7982" />
+          <entry key="PLAIN_TEXT" value="187" />
+          <entry key="RegExp" value="1" />
+          <entry key="SCSS" value="476" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/package.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="10" column="78" lean-forward="true" selection-start-line="10" selection-start-column="78" selection-end-line="10" selection-end-column="78" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/public/images/porto.gif">
+          <provider selected="true" editor-type-id="images" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/public/images/petrobras.png">
+          <provider selected="true" editor-type-id="images" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/public/images/me.png">
+          <provider selected="true" editor-type-id="images" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="7" column="18" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/public/images/vale.png">
+          <provider selected="true" editor-type-id="images" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/assets/scss/app.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="10" selection-start-line="10" selection-end-line="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/app/work/project/project.template.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="10" column="41" selection-start-line="10" selection-start-column="41" selection-end-line="10" selection-end-column="41" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/app/skills/skill/skill.template.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="9" column="41" selection-start-line="9" selection-start-column="41" selection-end-line="9" selection-end-column="41" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/assets/scss/work.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="765">
+              <caret line="51" column="20" selection-start-line="51" selection-start-column="20" selection-end-line="51" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>dataSet</find>
+      <find>slidde</find>
+      <find>Array.</find>
+      <find>strokeOpacity</find>
+      <find>stroke-opacity=&quot;0&quot;</find>
+      <find>poly</find>
+      <find>style&gt;</find>
+      <find>--</find>
+      <find>var(</find>
+      <find>h2</find>
+      <find>this.animations.cursor</find>
+      <find>setUpView</find>
+      <find>css</find>
+      <find>$white</find>
+      <find>preloader</find>
+      <find>render</find>
+      <find>loadModule</find>
+      <find>datase</find>
+      <find>clear</find>
+      <find>fadeOutPage</find>
+      <find>#home</find>
+      <find>animateLogo</find>
+      <find>h1 {</find>
+      <find>sub</find>
+      <find>40px</find>
+      <find>\n\n\.project\{\n  width\: 100\%\;\n  border\-radius\: 8px\;\n  display\: flex\;\n  align\-items\: center\;\n  padding\: 8px\;\n  margin\-bottom\: 16px\;\n  opacity\: 0\;\n  transition\: all 0\.6s ease\-in\-out\;\n\}\n\n\.skill\:nth\-child\(even\)\{\n  transform\: translateX\(100\%\)\;\n\}\n\n\.skill\:nth\-child\(odd\)\{\n  transform\: translateX\(\-100\%\)\;\n\}\n\n\.skill\.skill\-\-slide\-in\{\n  opacity\: 1\;\n  transform\: translateX\(0\)\;\n\}\n\n\.skill\:nth\-child\(even\)\{\n  flex\-direction\: row\-reverse\;\n\}\n\n\.skill__media \{\n  min\-height\: 60px\;\n  min\-width\: 60px\;\n  border\: 3px solid var\(\-\-saffron\)\;\n  border\-radius\: 50\%\;\n  display\: flex\;\n  flex\-direction\: column\;\n  justify\-content\: center\;\n  align\-items\: center\;\n  margin\-right\: 8px\;\n  position\: relative\;\n  overflow\: hidden\;\n\}\n\n\.skill__image \{\n  width\: 100\%\;\n  height\: auto\;\n\}\n\n\.skill__text \{\n  font\-size\: 0\.8em\;\n\}\n\n\.skill__text \.title \{\n  font\-weight\: bold\;\n  font\-size\: 1\.1em\;\n  color\: var\(\-\-saffron\)\;\n\}</find>
+      <find>skill</find>
+      <find>navbar__list</find>
+      <find>SkillsModel</find>
+      <find>:root</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>--black-color</replace>
+      <replace>;</replace>
+      <replace>'</replace>
+      <replace>page</replace>
+      <replace>dataset</replace>
+      <replace>stroke-opacity</replace>
+      <replace>cursor</replace>
+      <replace>var(--white)</replace>
+      <replace>loadPage</replace>
+      <replace>project</replace>
+      <replace>ProjectModel</replace>
+    </replaceStrings>
+    <dirStrings>
+      <dir>$PROJECT_DIR$/src</dir>
+    </dirStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/app/app.model.js" />
+        <option value="$PROJECT_DIR$/src/app/common/paragraph.template.js" />
+        <option value="$PROJECT_DIR$/src/app/common/toast.component.js" />
+        <option value="$PROJECT_DIR$/src/assets/css/about.css" />
+        <option value="$PROJECT_DIR$/src/assets/css/about.scss" />
+        <option value="$PROJECT_DIR$/src/app/todo/todo-list/todo-list.component.js" />
+        <option value="$PROJECT_DIR$/src/app/common/logo.component.js" />
+        <option value="$PROJECT_DIR$/src/app/common/preloader.js" />
+        <option value="$PROJECT_DIR$/src/assets/scss/app.scss" />
+        <option value="$PROJECT_DIR$/src/app/app.template.js" />
+        <option value="$PROJECT_DIR$/src/app/common/logo.template.js" />
+        <option value="$PROJECT_DIR$/src/app/home/home.module.js" />
+        <option value="$PROJECT_DIR$/src/app/common/preloader/preloader.template.js" />
+        <option value="$PROJECT_DIR$/src/assets/scss/about.scss" />
+        <option value="$PROJECT_DIR$/src/app/about/about.module.js" />
+        <option value="$PROJECT_DIR$/src/app/common/text.template.js" />
+        <option value="$PROJECT_DIR$/src/assets/css/typograph.css" />
+        <option value="$PROJECT_DIR$/src/assets/js/DrawSVGPlugin.js" />
+        <option value="$PROJECT_DIR$/src/assets/js/vendor/fontfaceobserver.js" />
+        <option value="$PROJECT_DIR$/src/app/about/about.template.js" />
+        <option value="$PROJECT_DIR$/src/app/home/home.template.js" />
+        <option value="$PROJECT_DIR$/src/assets/scss/home.scss" />
+        <option value="$PROJECT_DIR$/src/app/about/about.model.js" />
+        <option value="$PROJECT_DIR$/src/app/skills/skills.module.js" />
+        <option value="$PROJECT_DIR$/src/assets/scss/page.scss" />
+        <option value="$PROJECT_DIR$/src/app/app.component.js" />
+        <option value="$PROJECT_DIR$/src/app/skills/skills.template.js" />
+        <option value="$PROJECT_DIR$/src/app/common/preloader/preloader.component.js" />
+        <option value="$PROJECT_DIR$/src/app/skills/skills.component.js" />
+        <option value="$PROJECT_DIR$/src/app/about/about.component.js" />
+        <option value="$PROJECT_DIR$/src/app/home/home.component.js" />
+        <option value="$PROJECT_DIR$/src/assets/scss/skills.scss" />
+        <option value="$PROJECT_DIR$/src/app/work/work.template.js" />
+        <option value="$PROJECT_DIR$/src/app/work/work.module.js" />
+        <option value="$PROJECT_DIR$/src/app/work/work.component.js" />
+        <option value="$PROJECT_DIR$/src/assets/scss/work.scss" />
+        <option value="$PROJECT_DIR$/src/app/work/work.model.js" />
+        <option value="$PROJECT_DIR$/src/app/skills/skill/skill.template.js" />
+        <option value="$PROJECT_DIR$/src/app/work/project/project.template.js" />
+        <option value="$PROJECT_DIR$/src/app/skills/skills.model.js" />
+        <option value="$PROJECT_DIR$/src/assets/scss/app_old.scss" />
+        <option value="$PROJECT_DIR$/webpack.config.js" />
+        <option value="$PROJECT_DIR$/src/app/app.module.js" />
+        <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/index.html" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER">
+    <package-json value="$PROJECT_DIR$/package.json" />
+  </component>
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
+  </component>
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="NodeModulesDirectoryManager">
+    <handled-path value="$PROJECT_DIR$/node_modules" />
+  </component>
+  <component name="NodePackageJsonFileManager">
+    <packageJsonPaths>
+      <path value="$PROJECT_DIR$/package.json" />
+    </packageJsonPaths>
+  </component>
+  <component name="ProjectFrameBounds" fullScreen="true">
+    <option name="width" value="1440" />
+    <option name="height" value="900" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State />
+          <State>
+            <id>Code quality toolsJavaScript</id>
+          </State>
+          <State>
+            <id>JavaScript</id>
+          </State>
+        </expanded-state>
+      </profile-state>
+    </entry>
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="vanilla-todos-pwa" type="b2602c69:ProjectViewProjectNode" />
+              <item name="vanilla-todos-pwa" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="vanilla-todos-pwa" type="b2602c69:ProjectViewProjectNode" />
+              <item name="vanilla-todos-pwa" type="462c0819:PsiDirectoryNode" />
+              <item name="dist" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="vanilla-todos-pwa" type="b2602c69:ProjectViewProjectNode" />
+              <item name="vanilla-todos-pwa" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="vanilla-todos-pwa" type="b2602c69:ProjectViewProjectNode" />
+              <item name="vanilla-todos-pwa" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="vanilla-todos-pwa" type="b2602c69:ProjectViewProjectNode" />
+              <item name="vanilla-todos-pwa" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="vanilla-todos-pwa" type="b2602c69:ProjectViewProjectNode" />
+              <item name="vanilla-todos-pwa" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="images" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.standard" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.standard" value="project" />
+    <property name="node.js.selected.package.eslint" value="" />
+    <property name="node.js.selected.package.standard" value="" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/public/images" />
+      <recent name="$PROJECT_DIR$/src/assets/scss" />
+      <recent name="$PROJECT_DIR$/src/app/work/project" />
+      <recent name="$PROJECT_DIR$/src/app" />
+      <recent name="$PROJECT_DIR$/src/app/skills/skill" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/public/js" />
+      <recent name="$PROJECT_DIR$/src/public" />
+      <recent name="$PROJECT_DIR$/src" />
+      <recent name="$PROJECT_DIR$/src/assets/js/vendor" />
+      <recent name="$PROJECT_DIR$/src/app/common/preloader" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6b682a4e-7496-4500-8b96-591d5f6c0295" name="Default Changelist" comment="" />
+      <created>1555701854625</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1555701854625</updated>
+      <workItem from="1555701856102" duration="52903000" />
+      <workItem from="1555871999013" duration="10254000" />
+      <workItem from="1555959645556" duration="2305000" />
+      <workItem from="1555986393156" duration="12832000" />
+      <workItem from="1556166584551" duration="284000" />
+      <workItem from="1556336044384" duration="25821000" />
+      <workItem from="1556676594170" duration="131000" />
+      <workItem from="1556677018582" duration="4636000" />
+      <workItem from="1556727466399" duration="5018000" />
+      <workItem from="1556843251696" duration="665000" />
+      <workItem from="1556921512987" duration="430000" />
+    </task>
+    <task id="LOCAL-00001" summary="iniciando o segundo modulo, about">
+      <created>1555742930103</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1555742930103</updated>
+    </task>
+    <task id="LOCAL-00002" summary="iniciando o segundo modulo, about">
+      <created>1555819722714</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1555819722714</updated>
+    </task>
+    <task id="LOCAL-00003" summary="evolucao do layout">
+      <created>1555842405194</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1555842405194</updated>
+    </task>
+    <task id="LOCAL-00004" summary="logo done, preloader done">
+      <created>1555891005476</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1555891005476</updated>
+    </task>
+    <task id="LOCAL-00005" summary="versao estavel">
+      <created>1555990825990</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1555990825990</updated>
+    </task>
+    <task id="LOCAL-00006" summary="refactor for true SPA content insert">
+      <created>1555998448387</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1555998448387</updated>
+    </task>
+    <task id="LOCAL-00007" summary="ajustes e fixes">
+      <created>1555999342552</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1555999342552</updated>
+    </task>
+    <task id="LOCAL-00008" summary="ajustes e fixes">
+      <created>1556002470766</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1556002470766</updated>
+    </task>
+    <task id="LOCAL-00009" summary="com fonts">
+      <created>1556393976391</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1556393976391</updated>
+    </task>
+    <task id="LOCAL-00010" summary="skills page, desktop block">
+      <created>1556416375407</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1556416375407</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="115279000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2015504" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="npm" order="2" side_tool="true" />
+      <window_info id="Favorites" order="3" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.32891566" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.2759036" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.31642002" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="npm" order="2" side_tool="true" />
+      <window_info id="Favorites" order="3" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.32891566" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.2759036" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="iniciando o segundo modulo, about" />
+    <MESSAGE value="evolucao do layout" />
+    <MESSAGE value="logo done, preloader done" />
+    <MESSAGE value="versao estavel" />
+    <MESSAGE value="refactor for true SPA content insert" />
+    <MESSAGE value="ajustes e fixes" />
+    <MESSAGE value="com fonts" />
+    <MESSAGE value="skills page, desktop block" />
+    <option name="LAST_COMMIT_MESSAGE" value="skills page, desktop block" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/app/app.template.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="17" selection-start-column="17" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/home/home.module.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="10" selection-start-line="1" selection-start-column="7" selection-end-line="1" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/common/logo.template.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="44" selection-start-line="1" selection-start-column="44" selection-end-line="1" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/common/text.template.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="20" selection-start-line="1" selection-start-column="20" selection-end-line="1" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/assets/css/typograph.css" />
+    <entry file="file://$PROJECT_DIR$/src/assets/js/vendor/DrawSVGPlugin.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="88" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/about/about.template.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="6" lean-forward="true" selection-start-line="16" selection-start-column="6" selection-end-line="16" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/assets/scss/about.scss">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/common/preloader/preloader.template.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="10" selection-start-column="10" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/public/js/fontfaceobserver.js" />
+    <entry file="file://$PROJECT_DIR$/src/app/home/home.template.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="33" selection-start-line="10" selection-start-column="33" selection-end-line="10" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/skills/skills.module.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="32" selection-start-line="1" selection-start-column="32" selection-end-line="1" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/assets/scss/home.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="25" column="12" selection-start-line="25" selection-start-column="12" selection-end-line="25" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/assets/scss/page.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="22" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/about/about.model.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="8" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/skills/skills.template.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="27" selection-start-line="7" selection-start-column="27" selection-end-line="7" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/about/about.module.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/common/preloader/preloader.component.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="41" lean-forward="true" selection-start-column="41" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/about/about.component.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="16" column="53" selection-start-line="16" selection-start-column="53" selection-end-line="16" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/home/home.component.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="528">
+          <caret line="68" lean-forward="true" selection-start-line="68" selection-end-line="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/assets/scss/skills.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="675">
+          <caret line="45" column="21" selection-start-line="45" selection-start-column="21" selection-end-line="45" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/app.component.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="393">
+          <caret line="81" selection-start-line="81" selection-end-line="81" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/example/add-todo/add-todo.component.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/example/add-todo/add-todo.model.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/work/work.model.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="46" selection-start-line="6" selection-start-column="46" selection-end-line="6" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/work/work.module.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="30" selection-start-line="1" selection-start-column="30" selection-end-line="1" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/work/work.component.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="20" column="21" selection-start-line="20" selection-start-column="21" selection-end-line="20" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/skills/skills.component.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="17" column="45" selection-start-line="17" selection-start-column="40" selection-end-line="17" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/skills/skills.model.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="27" column="24" selection-start-line="27" selection-start-column="24" selection-end-line="27" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/work/work.template.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="31" selection-start-line="10" selection-start-column="31" selection-end-line="10" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dist/main.d60de93628715832345c.js" />
+    <entry file="file://$PROJECT_DIR$/dist/main.f9801f959eed73323c3b.js" />
+    <entry file="file://$PROJECT_DIR$/dist/main.9bc78ebeb3d74a0dee9b.js" />
+    <entry file="file://$PROJECT_DIR$/webpack.config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="765">
+          <caret line="51" column="24" selection-start-line="51" selection-start-column="24" selection-end-line="51" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build-sw.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="7" selection-start-line="17" selection-start-column="7" selection-end-line="17" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dist/sw.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/app.module.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="21" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="21" />
+          <folding>
+            <element signature="e#0#43#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dist/main.9c2e6207f3210641a283.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dist/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="7" lean-forward="true" selection-start-line="13" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/assets/scss/app.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/work/project/project.template.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="41" selection-start-line="10" selection-start-column="41" selection-end-line="10" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/skills/skill/skill.template.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="41" selection-start-line="9" selection-start-column="41" selection-end-line="9" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/assets/scss/work.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="765">
+          <caret line="51" column="20" selection-start-line="51" selection-start-column="20" selection-end-line="51" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/public/images/porto.gif">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/public/images/petrobras.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/public/images/me.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/public/images/vale.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/public/images/santander.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="78" lean-forward="true" selection-start-line="10" selection-start-column="78" selection-end-line="10" selection-end-column="78" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="7" column="18" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
