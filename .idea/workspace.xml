@@ -2,8 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6b682a4e-7496-4500-8b96-591d5f6c0295" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.travis.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/contact/contact.component.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/contact/contact.model.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/contact/contact.module.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/contact/contact.template.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/contact/skill/skill.template.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -33,7 +38,7 @@
           <entry key="css" value="5" />
           <entry key="gif" value="1" />
           <entry key="html" value="25" />
-          <entry key="js" value="158" />
+          <entry key="js" value="159" />
           <entry key="json" value="11" />
           <entry key="md" value="2" />
           <entry key="png" value="4" />
@@ -48,7 +53,7 @@
           <entry key="HTML" value="25" />
           <entry key="Image" value="5" />
           <entry key="JSON" value="11" />
-          <entry key="JavaScript" value="158" />
+          <entry key="JavaScript" value="159" />
           <entry key="PLAIN_TEXT" value="3" />
           <entry key="SCSS" value="13" />
           <entry key="TypeScript" value="1" />
@@ -58,21 +63,21 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="css" value="72" />
-          <entry key="html" value="2732" />
+          <entry key="html" value="2803" />
           <entry key="js" value="8020" />
           <entry key="json" value="49" />
           <entry key="scss" value="476" />
-          <entry key="txt" value="187" />
+          <entry key="txt" value="204" />
           <entry key="yml" value="21" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSS" value="72" />
-          <entry key="HTML" value="2769" />
+          <entry key="HTML" value="2840" />
           <entry key="JSON" value="49" />
           <entry key="JavaScript" value="7982" />
-          <entry key="PLAIN_TEXT" value="187" />
+          <entry key="PLAIN_TEXT" value="204" />
           <entry key="RegExp" value="1" />
           <entry key="SCSS" value="476" />
           <entry key="YAML" value="21" />
@@ -86,7 +91,7 @@
         <entry file="file://$PROJECT_DIR$/package.json">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="150">
-              <caret line="10" column="78" lean-forward="true" selection-start-line="10" selection-start-column="78" selection-end-line="10" selection-end-column="78" />
+              <caret line="10" column="78" selection-start-line="10" selection-start-column="78" selection-end-line="10" selection-end-column="78" />
             </state>
           </provider>
         </entry>
@@ -106,20 +111,25 @@
           <provider selected="true" editor-type-id="images" />
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="7" column="18" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
+            <state relative-caret-position="201">
+              <caret line="49" column="6" lean-forward="true" selection-start-line="49" selection-start-column="6" selection-end-line="49" selection-end-column="6" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/app/contact/skill/skill.template.js">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.travis.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="5" selection-start-line="4" selection-start-column="5" selection-end-line="4" selection-end-column="5" />
+            <state relative-caret-position="270">
+              <caret line="18" column="17" selection-start-line="18" selection-start-column="17" selection-end-line="18" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -127,15 +137,6 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/public/images/vale.png">
           <provider selected="true" editor-type-id="images" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/app/work/project/project.template.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="41" selection-start-line="10" selection-start-column="41" selection-end-line="10" selection-end-column="41" />
-            </state>
-          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -266,8 +267,8 @@
         <option value="$PROJECT_DIR$/webpack.config.js" />
         <option value="$PROJECT_DIR$/src/app/app.module.js" />
         <option value="$PROJECT_DIR$/package.json" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/travis.yml" />
+        <option value="$PROJECT_DIR$/index.html" />
       </list>
     </option>
   </component>
@@ -328,11 +329,6 @@
             <path>
               <item name="vanilla-todos-pwa" type="b2602c69:ProjectViewProjectNode" />
               <item name="vanilla-todos-pwa" type="462c0819:PsiDirectoryNode" />
-              <item name="dist" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="vanilla-todos-pwa" type="b2602c69:ProjectViewProjectNode" />
-              <item name="vanilla-todos-pwa" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -345,14 +341,8 @@
               <item name="vanilla-todos-pwa" type="b2602c69:ProjectViewProjectNode" />
               <item name="vanilla-todos-pwa" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="vanilla-todos-pwa" type="b2602c69:ProjectViewProjectNode" />
-              <item name="vanilla-todos-pwa" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-              <item name="images" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="contact" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -376,10 +366,10 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/app" />
       <recent name="$PROJECT_DIR$/src/public/images" />
       <recent name="$PROJECT_DIR$/src/assets/scss" />
       <recent name="$PROJECT_DIR$/src/app/work/project" />
-      <recent name="$PROJECT_DIR$/src/app" />
       <recent name="$PROJECT_DIR$/src/app/skills/skill" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -422,7 +412,7 @@
       <workItem from="1556677018582" duration="4636000" />
       <workItem from="1556727466399" duration="5018000" />
       <workItem from="1556843251696" duration="665000" />
-      <workItem from="1556921512987" duration="1433000" />
+      <workItem from="1556921512987" duration="3717000" />
     </task>
     <task id="LOCAL-00001" summary="iniciando o segundo modulo, about">
       <created>1555742930103</created>
@@ -494,14 +484,29 @@
       <option name="project" value="LOCAL" />
       <updated>1556416375407</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="travis">
+      <created>1556938934469</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1556938934469</updated>
+    </task>
+    <task id="LOCAL-00012" summary="test travis">
+      <created>1556939482791</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1556939482791</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="116282000" />
+    <option name="totallyTimeSpent" value="118566000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2015504" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -568,16 +573,11 @@
     <MESSAGE value="ajustes e fixes" />
     <MESSAGE value="com fonts" />
     <MESSAGE value="skills page, desktop block" />
-    <option name="LAST_COMMIT_MESSAGE" value="skills page, desktop block" />
+    <MESSAGE value="travis" />
+    <MESSAGE value="test travis" />
+    <option name="LAST_COMMIT_MESSAGE" value="test travis" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/app/home/home.module.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="10" selection-start-line="1" selection-start-column="7" selection-end-line="1" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/app/common/logo.template.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
@@ -839,21 +839,24 @@
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
-          <caret line="10" column="78" lean-forward="true" selection-start-line="10" selection-start-column="78" selection-end-line="10" selection-end-column="78" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="7" column="18" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
+          <caret line="10" column="78" selection-start-line="10" selection-start-column="78" selection-end-line="10" selection-end-column="78" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/.travis.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="5" selection-start-line="4" selection-start-column="5" selection-end-line="4" selection-end-column="5" />
+        <state relative-caret-position="270">
+          <caret line="18" column="17" selection-start-line="18" selection-start-column="17" selection-end-line="18" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/contact/skill/skill.template.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="201">
+          <caret line="49" column="6" lean-forward="true" selection-start-line="49" selection-start-column="6" selection-end-line="49" selection-end-column="6" />
         </state>
       </provider>
     </entry>
