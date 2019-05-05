@@ -5,7 +5,7 @@ export const workTemplate = (model) => {
         .reduce((html, project) => html + projectTemplate(project), '');
 
     return `
-        <section id="work">
+        <section class="page__content" id="work">
             <section class="page__text-zone">
                 <h1 class="page__heading">${model.title}</h1>
                 <div class="project-container">

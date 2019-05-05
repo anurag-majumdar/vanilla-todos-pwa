@@ -1,15 +1,19 @@
-import { skillTemplate } from "./skill/skill.template";
+import {socialTemplate} from "./social/social.template";
 
 export const contactTemplate = (model) => {
-    const skillsHTML = model.skills
-        .reduce((html, skill) => html + skillTemplate(skill), '');
+    const socialsHTML = model.socials
+        .reduce((html, social) => html + socialTemplate(social), '');
 
     return `
-        <section id="skills">
-            <section class="page__text-zone">
-                <h1 class="page__heading">${model.title}</h1>
-                ${skillsHTML}
-            </section>
-        </section>
+        <div class="center-content">
+            <h1 class="page__heading">${model.title}</h1>
+            <div class="grid"> 
+                <div class="social-container">
+                    ${socialsHTML}
+                </div>
+             </div>
+        </div>
+        <hr class="divider">
+        <div id="map"></div>
     `;
 }

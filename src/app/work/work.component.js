@@ -16,10 +16,13 @@ const WorkComponent = {
 
     afterRender() {
         document.querySelector('main').scrollTop = 0;
+        let delay = 0;
         this.element.querySelectorAll('.project').forEach(skill => {
+            skill.style.transitionDelay = delay + 'ms';
+            delay += 150;
             setTimeout(()=>{
                 skill.classList.add('project--slide-in');
-            },300)
+            }, delay)
         })
     }
 };

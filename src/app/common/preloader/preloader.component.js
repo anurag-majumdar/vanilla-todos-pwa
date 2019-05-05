@@ -8,7 +8,7 @@ const preloaderComponent = {
             start: null,
             end: null,
             locked: false,
-            await: 2000,
+            await: 1000,
         };
         this.animations.unlock = () => {
             this.animations.locked = false;
@@ -20,86 +20,86 @@ const preloaderComponent = {
     },
 
     fadeOutPageSlideInPreloader (page) {
-        this.animations.fadeOutPageSlideInPreloader = new TimelineMax()
-            .to(
-                page,
-                0.4,
-                {
-                    immediateRender: false,
-                    opacity: 0.0,
-                    scale: 0.85,
-                    ease: Power4.easeOut,
-                })
-            .to(
-                page,
-                0,
-                {
-                    x: '100%',
-                }
-            )
-            .fromTo(
-                this.element,
-                0.4,
-                {
-                    immediateRender: false,
-                    x: '-100%',
-                    ease: Power4.easeOut
-                },
-                {
-                    x: '0%',
-                    onComplete: this.animations.unlock
-                }, 0.3)
-            .pause();
-
         const startAnimationIfUnlocked = () => {
             if(this.animations.locked) {
                 setTimeout(startAnimationIfUnlocked, this.animations.await);
-            } else {
-                this.animations.lock();
-                this.animateLogo();
-                this.animations.fadeOutPageSlideInPreloader.play();
+                return;
             }
+            this.animations.lock();
+            this.animateLogo();
+            this.animations.fadeOutPageSlideInPreloader = new TimelineMax()
+                .to(
+                    page,
+                    0.4,
+                    {
+                        immediateRender: false,
+                        opacity: 0.0,
+                        scale: 0.85,
+                        ease: Power4.easeOut,
+                    })
+                .to(
+                    page,
+                    0,
+                    {
+                        x: '100%',
+                    }
+                )
+                .fromTo(
+                    this.element,
+                    0.4,
+                    {
+                        immediateRender: false,
+                        x: '-100%',
+                        ease: Power4.easeOut
+                    },
+                    {
+                        x: '0%',
+                        onComplete: this.animations.unlock
+                    }, 0.3)
+                .pause();
+            this.animations.fadeOutPageSlideInPreloader.play();
         };
         startAnimationIfUnlocked();
     },
 
     fadeInPageSlideOutPreloader (page, newModule) {
-        this.animations.fadeInPageSlideOutPreloader = new TimelineMax()
-            .fromTo(
-                page,
-                1,
-                {
-                    immediateRender: true,
-                    opacity: 0,
-                    scale: 0.85,
-                    x: '0%'
-                },
-                {
-                    opacity: 1,
-                    scale: 1
-                }, 0.3)
-            .fromTo(
-                this.element,
-                1,
-                {
-                    immediateRender: false,
-                    x: '0%',
-                    ease: Power4.easeIn
-                },
-                {
-                    x: '100%',
-                    onComplete: this.animations.unlock,
-                }, 0)
-            .pause();
-
         const startAnimationIfUnlocked = () => {
             if(this.animations.locked) {
                 setTimeout(startAnimationIfUnlocked, this.animations.await);
-            } else {
-                this.animations.lock();
-                newModule.init();
-                this.animations.fadeInPageSlideOutPreloader.play();
+                return;
             }
+
+            this.animations.lock();
+            newModule.init();
+            this.animations.fadeInPageSlideOutPreloader = new TimelineMax()
+                .fromTo(
+                    page,
+                    1,
+                    {
+                        immediateRender: true,
+                        opacity: 0,
+                        scale: 0.85,
+                        x: '0%'
+                    },
+                    {
+                        opacity: 1,
+                        scale: 1
+                    }, 0.3)
+                .fromTo(
+                    this.element,
+                    1,
+                    {
+                        immediateRender: false,
+                        x: '0%',
+                        ease: Power4.easeIn
+                    },
+                    {
+                        x: '100%',
+                        onComplete: this.animations.unlock,
+                    }, 0)
+                .pause();
+            this.animations.fadeInPageSlideOutPreloader.play();
+
         };
         startAnimationIfUnlocked();
 
@@ -136,7 +136,7 @@ const preloaderComponent = {
     },
 
     setupAnimateLogo (logo) {
-        const interval = 0.2,
+        const interval = 0.1,
             lines = logo.querySelectorAll("#layer1 polyline"),
             lines2 = logo.querySelectorAll("#layer2 polyline"),
             tl = new TimelineMax(),
@@ -173,8 +173,8 @@ const preloaderComponent = {
 
         tl3.fromTo(firstCursor, 0.2, {strokeOpacity:1},{strokeOpacity:0.5});
         tl2.fromTo(lines2, 0.2, {strokeOpacity:1, immediateRender:false},{strokeOpacity:0.5});
-        tl.delay(0.3);
-        tl2.delay(0.3);
+        tl.delay(0.15);
+        tl2.delay(0.15);
 
         tl.pause();
         tl2.pause();

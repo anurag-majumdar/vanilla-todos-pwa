@@ -3,7 +3,7 @@ import logoTemplate from "../common/logo.template";
 export const homeTemplate = (model) => {
     const logo = logoTemplate('bgSVG');
     return `
-        <section id="home">
+        <section class="page__content" id="home">
             <section class="page__text-zone">
                 <h1>
                     <span>Hi,</span>
@@ -13,13 +13,15 @@ export const homeTemplate = (model) => {
                     <span>Web Developer.</span>
                 </h1>
                 <h2 class="subheading">Front End Engineer / React / Angular JS / Node</h2>
-                <button id="svgTeste">
-                    contact me
-                </button>
+                <a href="mailto:rtenorio88@gmail.com">
+                    <button>
+                        contact me
+                    </button>
+                </a>
             </section>
-            <section class="page__background">
-                ${logo}
-            </section>
+        </section>
+        <section class="page__background">
+            ${logo}
         </section>
     `;
 }

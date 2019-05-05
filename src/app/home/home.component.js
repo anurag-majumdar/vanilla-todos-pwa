@@ -67,13 +67,8 @@ const HomeComponent = {
     afterRender() {
         document.querySelector('main').scrollTop = 0;
 
-        const svgLogo = document.getElementById('bgSVG'),
-              svgButton = document.getElementById('svgTeste');
+        const svgLogo = document.getElementById('bgSVG');
 
-        svgButton.addEventListener('click', (e) => {
-            e.preventDefault();
-            this.animations.animateLogo(svgLogo);
-        });
 
         this.animations.animateLogo(svgLogo);
     }

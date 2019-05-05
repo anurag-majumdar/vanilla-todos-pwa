@@ -5,7 +5,7 @@ export const skillsTemplate = (model) => {
         .reduce((html, skill) => html + skillTemplate(skill), '');
 
     return `
-        <section id="skills">
+        <section class="page__content" id="skills">
             <section class="page__text-zone">
                 <h1 class="page__heading">${model.title}</h1>
                 <div class="skill-container">

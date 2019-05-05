@@ -1,4 +1,17 @@
 .page {
+
+    &__content {
+        @media (min-width: 56.25em) {
+            position: absolute;
+            padding: 60px;
+            top:50%;
+            transform: translateY(-50%);
+            width: calc(100vw - 120px);
+        }
+
+
+    }
+
     &__heading {
         line-height: 1.1;
         font-size: 2.2em;
@@ -27,6 +40,19 @@
         img {
             width: 100%;
             height: auto;
+        }
+    }
+}
+
+.grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @media (min-width: 56.25em) {
+        flex-direction: row;
+        >* {
+            flex: 1;
         }
     }
 }

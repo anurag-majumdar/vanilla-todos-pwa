@@ -1,5 +1,5 @@
 import ContactComponent from "./contact.component";
-import '../../assets/scss/skills.scss';
+import '../../assets/scss/contact.scss';
 import '../../assets/scss/page.scss';
 const ContactModule = {
 
