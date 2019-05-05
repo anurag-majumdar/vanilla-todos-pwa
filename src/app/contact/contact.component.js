@@ -152,6 +152,8 @@ const ContactComponent = {
 
 
     render() {
+        const oldMapsScript = document.getElementById('maps-script');
+        if(oldMapsScript) oldMapsScript.parentElement.removeChild(oldMapsScript);
         this.element.innerHTML = contactTemplate(ContactModel);
         this.afterRender();
     },
@@ -164,9 +166,7 @@ const ContactComponent = {
         const mapsScript = document.createElement('script');
         mapsScript.src = "https://maps.googleapis.com/maps/api/js?key=AIzaSyCP1p--Jnx4nVaNkfpnOkrQb3it9GOCUNE&callback=initMap";
         mapsScript.type = 'text/javascript';
-
-
-
+        mapsScript.id = "maps-script";
 
         document.body.appendChild(mapsScript);
         // document.body.appendChild(twitterScript);
