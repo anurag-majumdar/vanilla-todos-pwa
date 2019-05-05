@@ -2,6 +2,8 @@ import ToastComponent from './common/toast.component'
 import { TimelineMax } from 'gsap';
 import DrawSVGplugin from '../assets/js/vendor/DrawSVGPlugin';
 import preloader from "./common/preloader/preloader.component";
+import debounce from "./common/utils/debounce";
+import logoTemplate from "./common/logo.template";
 
 const AppComponent = {
 
@@ -11,6 +13,7 @@ const AppComponent = {
         this.page = document.querySelector('.page');
         this.body = document.querySelector('body');
         this.menuButton = document.querySelector('.header__menu-btn');
+        this.logo = document.querySelector('.header__logo a');
         this.navbar = document.querySelector('.navbar');
         this.navbarMenuList = document.querySelector('.navbar__list');
         this.menuItems = [].slice.call(document.querySelectorAll('.navbar__list-item'));
@@ -38,10 +41,14 @@ const AppComponent = {
                 this.setUpView();
             }
         });
+        window.addEventListener('resize', debounce((e) => {
 
+            this.responsiveLogo();
+
+        }, 100, false), false);
         this.menuButton.addEventListener('click', (e) => {
             e.preventDefault();
-            this.navbar.classList.toggle('show');
+            this.navbar.classList.toggle('navbar--show');
         });
     },
 
@@ -87,16 +94,34 @@ const AppComponent = {
             });
     },
 
+    responsiveLogo () {
+        const mq = window.matchMedia( "(min-width: 900px)" );
+        if (mq.matches) {
+            if(this.media === 'desktop') return;
+            this.media = 'desktop';
+            this.logo.innerHTML = logoTemplate('header-logo', true);
+            this.logo.classList.add('svg-logo')
+
+        } else {
+            if(this.media === 'mobile') return;
+            this.media = 'mobile';
+            this.logo.textContent = 'Tenorius.com';
+            this.logo.classList.remove('svg-logo')
+        }
+    },
 
     render() {
         this.preloader.render();
-        this.afterRender()
+        this.afterRender();
+        this.responsiveLogo();
     },
 
 
     afterRender () {
         this.preloader.afterRender();
     },
+
+
 };
 
 export default AppComponent;

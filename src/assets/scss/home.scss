@@ -5,6 +5,13 @@
     margin: 0 0 1rem 0;
 }
 
+#home .page__text-zone {
+    @media (min-width: 56.25em) {
+        position: absolute;
+        top: 30%;
+    }
+}
+
 @media (min-width: 43.75em) {
     #home h1 {
         font-size: 2.3em;

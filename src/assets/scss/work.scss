@@ -1,4 +1,9 @@
-
+.project-container{
+  @media (min-width: 56.25em) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
 
 .project{
   width: 100%;
@@ -9,6 +14,13 @@
   margin-bottom: 16px;
   opacity: 0;
   transition: all 0.6s ease-in-out;
+  background: linear-gradient(-45deg, var(--saffron) -250%, var(--gunmetal));
+  border: 1px solid var(--saffron);
+
+  @media (min-width: 56.25em) {
+    margin: 0 8px 16px;
+    flex: 0 1 calc(50% - 16px);
+  }
 }
 
 .project:nth-child(even){
@@ -42,6 +54,13 @@
   align-items: center;
   position: relative;
   overflow: hidden;
+
+  @media (min-width: 56.25em) {
+    height: 100px;
+    width: 100px;
+    min-height: 100px;
+    min-width: 100px;
+  }
 }
 
 .project:nth-child(even) .project__media{
@@ -60,6 +79,11 @@
 .project__text {
   flex: 1;
   font-size: 0.8em;
+  height: 100%;
+
+  @media (min-width: 56.25em) {
+    font-size: 1em;
+  }
 }
 
 .project__text .title {

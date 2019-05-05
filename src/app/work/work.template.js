@@ -8,7 +8,9 @@ export const workTemplate = (model) => {
         <section id="work">
             <section class="page__text-zone">
                 <h1 class="page__heading">${model.title}</h1>
-                ${projectsHTML}
+                <div class="project-container">
+                    ${projectsHTML}
+                </div>
             </section>
         </section>
     `;

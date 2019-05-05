@@ -8,7 +8,9 @@ export const skillsTemplate = (model) => {
         <section id="skills">
             <section class="page__text-zone">
                 <h1 class="page__heading">${model.title}</h1>
-                ${skillsHTML}
+                <div class="skill-container">
+                    ${skillsHTML}
+                </div>
             </section>
         </section>
     `;

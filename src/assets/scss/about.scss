@@ -1,0 +1,13 @@
+.page__pic {
+  border: 2px solid var(--saffron);
+  border-radius: 12px;
+  overflow: hidden;
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.page__body-text{
+  @media (min-width: 33.75em) {
+    column-count: 2;
+  }
+}

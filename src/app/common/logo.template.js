@@ -1,5 +1,5 @@
-const logoTemplate = (id) => `
-    <svg viewBox="0 0 196 200" width="100%" id="${id}">
+const logoTemplate = (id, noAnimation, width = '100%', height = '100%' ) => `
+    <svg viewBox="0 0 196 200" width="${width}" height="${height}" id="${id}">
             <title>t logo</title>
             <g style="z-index: 0">
                 <title>Layer 1</title>
@@ -114,7 +114,8 @@ const logoTemplate = (id) => `
                     />
                 </g>
             </g>
-            <g style="z-index: 1">
+            ${ !noAnimation && 
+                `<g style="z-index: 1">
                 <title>Layer 2</title>
                 <g stroke="null" id="layer2">
                     <polyline
@@ -248,7 +249,9 @@ const logoTemplate = (id) => `
 
                     />
                 </g>
-            </g>
+            </g>`
+
+            }
         </svg>
 `;
 
